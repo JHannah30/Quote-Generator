@@ -24,3 +24,12 @@
 .navbar a:hover {
   color: black;
 }
+
+.navlink {
+  color: #2f2f2f;
+}
+
+/* Change this property to something nicer looking, that let's the user know when they're on that page */
+.navlink-active {
+  color: red;
+}

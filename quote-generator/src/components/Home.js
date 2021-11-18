@@ -2,11 +2,12 @@ import './Home.css';
 import ProfileImage from '../images/anonymous-profile.png';
 
 const Home = () => {
+
     return ( 
         <div className="home">
             <section className="home-container">
                 <div className="quote-action centered">
-                    <button className="previous-quote"></button>
+                    <button className="previous-quote">Previous Quote</button>
                 </div>
                 <div className="quote-body centered">
                     <h2 className="quote-text">"This is the quote"</h2>
@@ -16,7 +17,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="quote-action centered">
-                    <button className="next-quote"></button>
+                    <button className="next-quote">Next Quote</button>
                 </div>
             </section>
         </div>
