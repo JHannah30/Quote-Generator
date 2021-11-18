@@ -1,0 +1,21 @@
+.navbar-container {
+  width: 100vw;
+}
+
+.navbar {
+  height: 40px;
+  padding: 20px 100px 20px 100px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
