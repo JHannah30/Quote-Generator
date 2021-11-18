@@ -1,0 +1,35 @@
+.home {
+  width: 100vw;
+  height: 100%;
+  background: rgb(255, 254, 185);
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+}
+
+.quote-action {
+  text-align: center;
+  width: 100px;
+}
+
+.quote-body {
+  width: 1500px;
+  background-color: coral;
+}
+
+.quote-text {
+  font-size: 2.5rem;
+}
+
+.quote-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.author-name {
+  font-style: italic;
+  margin-left: 20px;
+}
