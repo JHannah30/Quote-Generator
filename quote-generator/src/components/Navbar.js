@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import NavLogo from '../images/logo-black.png';
 
 const Navbar = () => {
 
@@ -13,7 +14,7 @@ const Navbar = () => {
     return ( 
         <div className="navbar-container">
             <nav className="navbar">
-                <h1>Quote Generator</h1>
+                <img src={NavLogo} alt="" className="logo" />
                 <div className="links">
                     <Link to="/" onClick={() =>setToggleActive("home")} className={toggleActive === "home" ? "navlink-active" : "navlink"}>Home</Link>
                     <Link to="/my-quotes" onClick={() => setToggleActive("myQuotes")} className={toggleActive === "myQuotes" ? "navlink-active" : "navlink"}>My Quotes</Link>
