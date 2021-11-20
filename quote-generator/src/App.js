@@ -11,6 +11,7 @@ function App() {
   const [quotes, setQuotes] = useState({ ...QuoteData });
   const [darkMode, setDarkMode] = useState(false);
   const [currentQuote, setCurrentQuote] = useState(quotes[Math.floor(Math.random() * 30)]);
+  const [selectedIcon, setSelectedIcon] = useState(false);
 
   const handleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -21,6 +22,10 @@ function App() {
   }
 
   const setFavouriteQuote = () => console.log(quotes);
+
+  const handleSelectedIcon = () => {
+    setSelectedIcon(!selectedIcon);
+  }
 
   return (
     <Router>
@@ -35,8 +40,10 @@ function App() {
               <Home 
                 quote={currentQuote}
                 darkMode={darkMode}
+                selectedIcon={selectedIcon}
                 newQuote={getNewQuote}
                 setFavouriteQuote={setFavouriteQuote}
+                handleSelectedIcon={handleSelectedIcon}
               />
             </Route>
             <Route path="/my-quotes">

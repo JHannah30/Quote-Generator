@@ -1,6 +1,14 @@
 import './Home.css';
+import ToggleHeartIcon from './ToggleHeartIcon';
 
-const Home = ({ quote, newQuote, darkMode, setFavouriteQuote }) => {
+const Home = ({ 
+    quote, 
+    darkMode, 
+    selectedIcon,
+    newQuote, 
+    setFavouriteQuote,
+    handleSelectedIcon 
+}) => {
 
     return ( 
         <div className={ darkMode ? "home-dark" : "home" }>
@@ -11,7 +19,10 @@ const Home = ({ quote, newQuote, darkMode, setFavouriteQuote }) => {
                         <img className="author-image" src={quote.image} alt="Headshot of the quote's author" />
                         <h4 className="author-name">{quote.author}</h4>
                     </a>
-                    <button className="save-quote-btn" onClick={setFavouriteQuote}>Save</button>
+                    <ToggleHeartIcon 
+                        selectedIcon={selectedIcon}
+                        handleSelectedIcon={handleSelectedIcon}
+                    />
                 </div>
             </section>
             <section className="quote-actions">
