@@ -28,74 +28,84 @@
 // import WayneGretzky from '../images/quote-authors/WayneGretzky.png';
 
 
-
-
 export const QuoteData = [
     {
         quote: "The greatest glory in living lies not in never falling, but in rising every time we fall",
         author: "Nelson Mandela",
         // image: NelsonMandela,
+        wiki: "https://en.wikipedia.org/wiki/Nelson_Mandela",
     },
     {
         quote: "The way to get started is to quit talking and begin doing",
         author: "Walt Disney",
         // image: WaltDisney,
+        wiki: "https://en.wikipedia.org/wiki/Walt_Disney",
     },
     {
         quote: "Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking",
         author: "Steve Jobs",
         // image: SteveJobs,
+        wiki: "https://en.wikipedia.org/wiki/Steve_Jobs",
     },
     {
         quote: "If life were predictable it would cease to be life, and be without flavor",
         author: "Eleanor Roosevelt",
         // image: EleanorRoosevelt,
+        wiki: "https://en.wikipedia.org/wiki/Eleanor_Roosevelt",
     },
     {
         quote: "If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough",
         author: "Oprah Winfrey",
         // image: OprahWinfrey,
+        wiki: "https://en.wikipedia.org/wiki/Oprah_Winfrey",
     },
     {
         quote: "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success",
         author: "James Cameron",
         // image: JamesCameron,
+        wiki: "https://en.wikipedia.org/wiki/James_Cameron",
     },
     {
         quote: "Life is what happens when you're busy making other plans",
         author: "John Lennon",
         // image: JohnLennon,
+        wiki: "https://en.wikipedia.org/wiki/John_Lennon",
     },
     {
         quote: "Spread love everywhere you go. Let no one ever come to you without leaving happier",
         author: "Mother Theresa",
         // image: MotherTheresa,
+        wiki: "https://en.wikipedia.org/wiki/Mother_Teresa",
     },
     {
         quote: "When you reach the end of your rope, tie a knot in it and hang on",
         author: "Franklin D. Roosevelt",
         // image: FranklinDRoosevelt,
+        wiki: "https://en.wikipedia.org/wiki/Franklin_D._Roosevelt",
     },
     {
         quote: "Always remember that you are absolutely unique. Just like everyone else",
         author: "Margaret Mead",
         // image: MargaretMead,
-
+        wiki: "https://en.wikipedia.org/wiki/Margaret_Mead",
     },
     {
         quote: "Don't judge each day by the harvest you reap but by the seeds that you plant",
         author: "Robert Louis Stevenson",
         // image: RobertLouisStevenson,
+        wiki: "https://en.wikipedia.org/wiki/Robert_Louis_Stevenson",
     },
     {
         quote: "The future belongs to those who believe in the beauty of their dreams",
         author: "Eleanor Roosevelt",
         // image: EleanorRoosevelt,
+        wiki: "https://en.wikipedia.org/wiki/Eleanor_Roosevelt"
     },
     {
         quote: "Tell me and I forget. Teach me and I remember. Involve me and I learn",
         author: "Benjamin Franklin",
         // image: BenjaminFranklin,
+        wiki: "https://en.wikipedia.org/wiki/Benjamin_Franklin",
     },
     {
         quote: "The best and most beautiful things in the world cannot be seen or even touched — they must be felt with the heart",
