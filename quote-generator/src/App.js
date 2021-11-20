@@ -9,10 +9,15 @@ import { QuoteData } from './data/QuoteData';
 function App() {
 
   const [darkMode, setDarkMode] = useState(false);
+  const [currentQuote, setCurrentQuote] = useState(QuoteData[Math.floor(Math.random() * 30)]);
 
-  function handleDarkMode() {
+  const handleDarkMode = () => {
     setDarkMode(!darkMode);
-    console.log("Dark mode active? " + darkMode)
+    console.log("Dark mode active? " + darkMode);
+  }
+
+  const newQuote = () => {
+    setCurrentQuote(QuoteData[Math.floor(Math.random() * 30)]);
   }
 
   return (
@@ -26,7 +31,8 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Home 
-                QuoteData={QuoteData}
+                Quote={currentQuote}
+                NewQuote={newQuote}
               />
             </Route>
             <Route path="/my-quotes">
