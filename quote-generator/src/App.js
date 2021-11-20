@@ -20,6 +20,8 @@ function App() {
     setCurrentQuote(quotes[Math.floor(Math.random() * 30)]);
   }
 
+  const setFavouriteQuote = () => console.log(quotes);
+
   return (
     <Router>
       <div className={darkMode ? "App dark-bg" : "App"}>
@@ -32,8 +34,9 @@ function App() {
             <Route exact path="/">
               <Home 
                 quote={currentQuote}
-                newQuote={getNewQuote}
                 darkMode={darkMode}
+                newQuote={getNewQuote}
+                setFavouriteQuote={setFavouriteQuote}
               />
             </Route>
             <Route path="/my-quotes">

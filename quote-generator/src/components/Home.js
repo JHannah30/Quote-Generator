@@ -1,11 +1,6 @@
 import './Home.css';
 
-const Home = ({ quote, newQuote, darkMode }) => {
-
-
-    const handleClick = () => {
-        console.log(`test`);
-    }
+const Home = ({ quote, newQuote, darkMode, setFavouriteQuote }) => {
 
     return ( 
         <div className={ darkMode ? "home-dark" : "home" }>
@@ -16,7 +11,7 @@ const Home = ({ quote, newQuote, darkMode }) => {
                         <img className="author-image" src={quote.image} alt="Headshot of the quote's author" />
                         <h4 className="author-name">{quote.author}</h4>
                     </a>
-                    <button className="save-quote-btn" onClick={() => handleClick}>Save</button>
+                    <button className="save-quote-btn" onClick={setFavouriteQuote}>Save</button>
                 </div>
             </section>
             <section className="quote-actions">
