@@ -111,85 +111,102 @@ export const QuoteData = [
         quote: "The best and most beautiful things in the world cannot be seen or even touched — they must be felt with the heart",
         author: "Helen Keller",
         // image: HelenKeller,
+        wiki: "https://en.wikipedia.org/wiki/Helen_Keller",
     },
     {
         quote: "It is during our darkest moments that we must focus to see the light",
         author: "Aristotle",
         // image: Aristotle,
+        wiki: "https://en.wikipedia.org/wiki/Aristotle"
     },
     {
         quote: "Whoever is happy will make others happy too",
         author: "Anne Frank",
         // image: AnneFrank,
+        wiki: "https://en.wikipedia.org/wiki/Anne_Frank",
     },
     {
         quote: "Do not go where the path may lead, go instead where there is no path and leave a trail",
         author: "Ralph Waldo Emerson",
         // image: RalphWaldoEmerson,
+        wiki: "https://en.wikipedia.org/wiki/Ralph_Waldo_Emerson",
     },
     {
         quote: "You will face many defeats in life, but never let yourself be defeated",
         author: "Maya Angelou",
         // image: Maya Angelou,
+        wiki: "https://en.wikipedia.org/wiki/Maya_Angelou",
     },
     {
         quote: "The greatest glory in living lies not in never falling, but in rising every time we fall",
         author: "Nelson Mandela",
         // image: NelsonMandela,
+        wiki: "https://en.wikipedia.org/wiki/Nelson_Mandela"
     },
     {
         quote: "In the end, it's not the years in your life that count. It's the life in your years",
         author: "Abraham Lincoln",
         // image: AbrahamLincoln,
+        wiki: "https://en.wikipedia.org/wiki/Abraham_Lincoln"
     },
     {
         quote: "Never let the fear of striking out keep you from playing the game",
         author: "Babe Ruth",
         // image: BabeRuth,
+        wiki: "https://en.wikipedia.org/wiki/Babe_Ruth",
     },
     {
         quote: "Life is either a daring adventure or nothing at all",
         author: "Helen Keller",
         // image: HelenKeller,
+        wiki: "https://en.wikipedia.org/wiki/Helen_Keller",
     },
     {
         quote: "Many of life's failures are people who did not realize how close they were to success when they gave up.",
         author: "Thomas A. Edison",
         // image: ThomasEdison,
+        wiki: "https://en.wikipedia.org/wiki/Thomas_Edison",
     },
     {
         quote: "You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose",
         author: "Dr. Seuss",
         // image: DrSeuss,
+        wiki: "https://en.wikipedia.org/wiki/Dr._Seuss",
     },
     {
         quote: "Success is not final; failure is not fatal: It is the courage to continue that counts",
         author: "Winston S. Churchill",
         // image: WinstonChurchill,
+        wiki: "https://en.wikipedia.org/wiki/Winston_Churchill",
     },
     {
         quote: "Success usually comes to those who are too busy to be looking for it",
         author: "Henry David Thoreau",
         // image: HenryDavidThoreau,
+        wiki: "https://en.wikipedia.org/wiki/Henry_David_Thoreau",
     },
     {
         quote: "The secret of success is to do the common thing uncommonly well",
         author: "John D. Rockefeller Jr.",
         // image: JohnDRockefellarJr,
+        wiki: "https://en.wikipedia.org/wiki/John_D._Rockefeller_Jr.",
     },
     {
         quote: "I find that the harder I work, the more luck I seem to have",
         author: "Thomas Jefferson",
         // image: ThomasJefferson,
+        wiki: "https://en.wikipedia.org/wiki/Thomas_Jefferson",
     },
     {
         quote: "Nothing is impossible, the word itself says, ‘I'm possible!'",
         author: "Audrey Hepburn",
         // image: AudreyHepburn,
+        wiki: "https://en.wikipedia.org/wiki/Audrey_Hepburn",
     },
     {
         quote: "You miss 100% of the shots you don't take",
         author: "Wayne Gretzky",
         // image: WayneGretzky,
+        wiki: "https://en.wikipedia.org/wiki/Wayne_Gretzky",
     },
 ]
