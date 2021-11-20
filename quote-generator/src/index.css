@@ -1,13 +1,18 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap");
 
 /* base styles */
 * {
   margin: 0;
-  font-family: "Open Sans";
-  color: #2f2f2f;
+  font-family: "Raleway";
+  color: #212121;
   font-size: 1.2rem;
 }
 
 .centered {
   text-align: center;
+}
+
+h4 {
+  font-family: "Lato";
 }

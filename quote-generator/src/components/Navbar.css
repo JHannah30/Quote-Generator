@@ -18,16 +18,12 @@
 .navbar a {
   margin-left: 16px;
   padding: 6px;
+  font-weight: bold;
   text-decoration: none;
-  color: #121212;
 }
 
 .navbar a:hover {
   color: rgb(236, 208, 51);
-}
-
-.navlink {
-  color: #121212;
 }
 
 .toggle-button {
@@ -48,7 +44,7 @@
   padding: 20px 100px 20px 100px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #4e4e4e;
+  border-bottom: 1px solid #3f3f3f;
   font-size: 1.3rem;
 }
 

@@ -1,40 +1,31 @@
 .home {
   width: 100vw;
-  height: 100%;
-}
-
-.home-container {
-  height: 700px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-}
-
-.quote-action {
-  width: 100px;
-  margin: 0 80px;
-  text-align: center;
 }
 
 .quote-body {
-  width: 1400px;
+  width: 70vw;
+  height: 350px;
+  margin: 160px 0 80px 0;
 }
 
 .quote-text {
-  margin: 100px 40px 40px 40px;
-  font-size: 2.5rem;
+  margin: 40px 40px 40px 60px;
+  font-size: 2.7rem;
 }
 
-.quote-author {
+.author-body {
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin: 40px 0;
+  align-items: center;
 }
 
 .author-name {
   margin-left: 20px;
-  font-style: italic;
+  font-size: 1.5rem;
+  border-bottom: solid 5px rgb(236, 208, 51);
 }
 
 .author-name:hover {
@@ -42,12 +33,40 @@
 }
 
 .author-link {
-  margin-left: 16px;
-  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
 }
 
+.save-quote-btn {
+  height: 40px;
+  margin-left: 40px;
+}
+
+.new-quote-btn {
+  width: 300px;
+  height: 80px;
+  background-color: #ffffff;
+  border: solid 5px #212121;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.new-quote-btn:hover {
+  background-color: rgb(236, 208, 51);
+  transform: scale(1.1);
+}
+
 /* Dark mode styling */
+.home-dark {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .home-dark h2 {
   color: #ffffff;
 }
