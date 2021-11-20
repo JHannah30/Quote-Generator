@@ -1,4 +1,5 @@
 .heart-icon {
+  margin-left: 30px;
   transform: scale(0.7);
   cursor: pointer;
 }
