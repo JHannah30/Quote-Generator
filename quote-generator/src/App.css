@@ -1,4 +1,9 @@
 .App {
   width: 100vw;
   height: 100vh;
+  background-color: #ffffff;
+}
+
+.dark-bg {
+  background-color: #2f2f2f;
 }

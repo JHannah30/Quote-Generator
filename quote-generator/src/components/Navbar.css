@@ -11,7 +11,7 @@
   font-size: 1.3rem;
 }
 
-.navbar .links {
+.navbar .nav-links {
   margin-left: auto;
 }
 
@@ -19,6 +19,7 @@
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
+  color: #121212;
 }
 
 .navbar a:hover {
@@ -26,7 +27,7 @@
 }
 
 .navlink {
-  color: #2f2f2f;
+  color: #121212;
 }
 
 .toggle-button {
@@ -37,5 +38,31 @@
 
 /* Change this property to something nicer looking, that let's the user know when they're on that page */
 .navlink-active {
-  color: red;
+  border-bottom: 5px solid rgb(236, 208, 51);
+}
+
+/* Dark Mode Styling */
+
+.navbar-dark {
+  height: 60px;
+  padding: 20px 100px 20px 100px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #4e4e4e;
+  font-size: 1.3rem;
+}
+
+.navbar-dark .nav-links {
+  margin-left: auto;
+}
+
+.navbar-dark a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  color: #ffffff;
+}
+
+.navbar-dark a:hover {
+  color: rgb(236, 208, 51);
 }

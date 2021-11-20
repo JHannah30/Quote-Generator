@@ -7,19 +7,19 @@ import MyQuotes from './components/MyQuotes';
 
 function App() {
 
-  const [toggleDark, setToggleDark] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
   function handleDarkMode() {
-    setToggleDark(!toggleDark);
-    console.log("Dark mode active? " + toggleDark)
+    setDarkMode(!darkMode);
+    console.log("Dark mode active? " + darkMode)
   }
 
   return (
     <Router>
-      <div className="App">
+      <div className={darkMode ? "App dark-bg" : "App"}>
         <Navbar 
           handleDarkMode={handleDarkMode} 
-          toggleDark={toggleDark}
+          darkMode={darkMode}
         />
         <div>
           <Switch>

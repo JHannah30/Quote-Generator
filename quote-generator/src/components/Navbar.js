@@ -1,17 +1,18 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import NavLogo from '../images/logo-black.png';
+import NavLogoLight from '../images/logo-black.png';
+import NavLogoDark from '../images/logo-white.png';
 
-const Navbar = ({handleDarkMode, toggleDark}) => {
+const Navbar = ({handleDarkMode, darkMode}) => {
 
-    const [toggleActive, setToggleActive] = useState(null);
+    const [toggleActive, setToggleActive] = useState("home");
 
     return ( 
         <div className="navbar-container">
-            <nav className={ toggleDark ? "navbar-dark" : "navbar" }>
-                <img src={NavLogo} alt="" className="logo" />
-                <div className="links">
+            <nav className={ darkMode ? "navbar-dark" : "navbar" }>
+                <img src={ darkMode ? NavLogoDark : NavLogoLight } alt="" className="logo" />
+                <div className="nav-links">
                     <Link to="/" onClick={() =>setToggleActive("home")} className={ toggleActive === "home" ? "navlink-active" : "navlink" }>Home</Link>
                     <Link to="/my-quotes" onClick={() => setToggleActive("myQuotes")} className={ toggleActive === "myQuotes" ? "navlink-active" : "navlink" }>My Quotes</Link>
                     <button className="toggle-button" onClick={handleDarkMode}>D/L</button>
