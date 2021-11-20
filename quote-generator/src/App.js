@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import MyQuotes from './components/MyQuotes';
+import { QuoteData } from './data/QuoteData';
 
 function App() {
 
@@ -24,7 +25,9 @@ function App() {
         <div>
           <Switch>
             <Route exact path="/">
-              <Home />
+              <Home 
+                QuoteData={QuoteData}
+              />
             </Route>
             <Route path="/my-quotes">
               <MyQuotes />
