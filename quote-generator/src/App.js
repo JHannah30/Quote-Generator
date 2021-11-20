@@ -31,8 +31,9 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Home 
-                Quote={currentQuote}
-                NewQuote={newQuote}
+                quote={currentQuote}
+                newQuote={newQuote}
+                darkMode={darkMode}
               />
             </Route>
             <Route path="/my-quotes">

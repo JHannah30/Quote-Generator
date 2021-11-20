@@ -36,3 +36,22 @@
   margin-left: 20px;
   font-style: italic;
 }
+
+.author-name:hover {
+  color: rgb(236, 208, 51);
+}
+
+.author-link {
+  margin-left: 16px;
+  padding: 6px;
+  text-decoration: none;
+}
+
+/* Dark mode styling */
+.home-dark h2 {
+  color: #ffffff;
+}
+
+.home-dark h4 {
+  color: #ffffff;
+}

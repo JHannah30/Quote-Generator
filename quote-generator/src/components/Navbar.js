@@ -4,7 +4,7 @@ import './Navbar.css';
 import NavLogoLight from '../images/logo-black.png';
 import NavLogoDark from '../images/logo-white.png';
 
-const Navbar = ({handleDarkMode, darkMode}) => {
+const Navbar = ({ handleDarkMode, darkMode }) => {
 
     const [toggleActive, setToggleActive] = useState("home");
 

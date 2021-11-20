@@ -1,22 +1,25 @@
 import './Home.css';
+import { Link } from 'react-router-dom';
 
-const Home = ({ Quote, NewQuote }) => {
+const Home = ({ quote, newQuote, darkMode }) => {
 
     return ( 
-        <div className="home">
+        <div className={ darkMode ? "home-dark" : "home" }>
             <section className="home-container">
                 <div className="quote-action centered">
                     <button className="previous-quote">Previous Quote</button>
                 </div>
                 <div className="quote-body centered">
-                    <h2 className="quote-text">" {Quote.quote} "</h2>
+                    <h2 className="quote-text">'{quote.quote}'</h2>
                     <div className="quote-author">
-                        <img className="author-image" src={Quote.image} alt="Headshot of the quote's author" />
-                        <h4 className="author-name">- {Quote.author}</h4>
+                        <img className="author-image" src={quote.image} alt="Headshot of the quote's author" />
+                        <Link to={quote.wiki} className="author-link">
+                            <h4 className="author-name">~ {quote.author}</h4>
+                        </Link>
                     </div>
                 </div>
                 <div className="quote-action centered">
-                    <button className="next-quote" onClick={NewQuote}>Next Quote</button>
+                    <button className="next-quote" onClick={newQuote}>Next Quote</button>
                 </div>
             </section>
         </div>
