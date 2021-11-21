@@ -24,16 +24,21 @@ const MyQuotes = ({
         }
     })
 
+    const customQuoteCards = customQuotes.map((quote) => {
+        return <QuoteCard 
+            darkMode={darkMode}
+            quote={quote.quote}
+            author={quote.author}
+            image={quote.image}
+            />
+    })
+
     const showCustomQuotes = () => {
         setActiveTab("custom");
     }
 
     const showSavedQuotes = () => {
         setActiveTab("saved");
-    }
-
-    const createNewQuote = () => {
-        console.log("Quote created... almost.")
     }
 
     return ( 
@@ -56,7 +61,7 @@ const MyQuotes = ({
                 {activeTab === "custom" && 
                 <CustomQuotesTab 
                     darkMode={darkMode} 
-                    customQuotes={customQuotes} 
+                    customQuotes={customQuoteCards} 
                     addQuote={addQuote} 
                 />}
                 

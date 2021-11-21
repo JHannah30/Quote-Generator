@@ -68,8 +68,11 @@ function App() {
 
   useEffect(() => {
     console.log(quotes);
-    console.log(customQuotes);
   }, [quotes])
+
+  useEffect(() => {
+    console.log(customQuotes);
+  }, [customQuotes])
 
   return (
     <Router>
