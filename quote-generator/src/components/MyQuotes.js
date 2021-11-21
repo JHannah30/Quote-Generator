@@ -4,7 +4,8 @@ import QuoteCard from './QuoteCard';
 
 const MyQuotes = ({ 
     darkMode, 
-    customQuotes 
+    customQuotes,
+    quotes,
 }) => {
 
     return ( 
@@ -15,9 +16,13 @@ const MyQuotes = ({
                 <button className="add-quote-btn">Add New Quote</button>
             </nav>
             <div className="my-quotes-body">
-                <QuoteCard />
-                <QuoteCard />
-                <QuoteCard />
+                {/* Render famous quotes array */}
+                {quotes.map((quote) => (
+                    <QuoteCard 
+                    darkMode={darkMode} 
+                    quotes={quotes}
+                    />
+                ))}
             </div>
         </div>
      );

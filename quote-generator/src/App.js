@@ -92,6 +92,7 @@ const addQuote = () => {
             <Route path="/my-quotes">
               <MyQuotes 
                 darkMode={darkMode}
+                quotes={quotes}
                 customQuotes={customQuotes}
                 addQuote={addQuote}
               />

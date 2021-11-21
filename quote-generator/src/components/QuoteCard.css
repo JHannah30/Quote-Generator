@@ -44,3 +44,20 @@
 .quote-card-author {
   padding: 6px;
 }
+
+/* Dark mode styling  */
+.quote-card-dark {
+  width: 70vw;
+  height: 120px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  border: solid 1px #3f3f3f;
+}
+.quote-card-dark h4 {
+  color: #ffffff;
+}
+
+.quote-card-dark p {
+  color: #ffffff;
+}
