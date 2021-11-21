@@ -26,10 +26,9 @@
   color: rgb(236, 208, 51);
 }
 
-.toggle-button {
+.dark-mode-icon {
   margin-left: 48px;
-  padding: 6px;
-  border-radius: 50px;
+  cursor: pointer;
 }
 
 /* Change this property to something nicer looking, that let's the user know when they're on that page */

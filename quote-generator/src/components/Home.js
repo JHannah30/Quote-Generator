@@ -2,11 +2,10 @@ import './Home.css';
 import ToggleHeartIcon from './ToggleHeartIcon';
 
 const Home = ({ 
-    quote, 
-    darkMode, 
+    quote,
+    darkMode,
     selectedIcon,
-    newQuote, 
-    setFavouriteQuote,
+    newQuote,
     handleSelectedIcon 
 }) => {
 

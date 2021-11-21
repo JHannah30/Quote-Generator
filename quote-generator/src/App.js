@@ -9,8 +9,8 @@ import { QuoteData } from './data/QuoteData';
 function App() {
 
   const [quotes, setQuotes] = useState({ ...QuoteData });
-  const [darkMode, setDarkMode] = useState(false);
   const [currentQuote, setCurrentQuote] = useState(quotes[Math.floor(Math.random() * 30)]);
+  const [darkMode, setDarkMode] = useState(false);
   const [selectedIcon, setSelectedIcon] = useState(false);
 
   const handleDarkMode = () => {
@@ -20,8 +20,6 @@ function App() {
   const getNewQuote = () => {
     setCurrentQuote(quotes[Math.floor(Math.random() * 30)]);
   }
-
-  const setFavouriteQuote = () => console.log(quotes);
 
   const handleSelectedIcon = () => {
     setSelectedIcon(!selectedIcon);
@@ -42,7 +40,6 @@ function App() {
                 darkMode={darkMode}
                 selectedIcon={selectedIcon}
                 newQuote={getNewQuote}
-                setFavouriteQuote={setFavouriteQuote}
                 handleSelectedIcon={handleSelectedIcon}
               />
             </Route>
