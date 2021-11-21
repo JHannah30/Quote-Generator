@@ -26,6 +26,8 @@ function App() {
   // Changes appearance of save icon when clicked
   const handleSelectedIcon = () => {
     setSelectedIcon(!selectedIcon);
+    let quoteID = currentQuote.id;
+    // Write code to say if quotes[item] matches quoteID, update data of that index to favourited:true
   }
 
   // Shows alert on screen to let user know when a quote has been saved/unsaved.
@@ -41,9 +43,8 @@ function App() {
         setSaveAlert(null)
       }, 1000)
     }
-    console.log(selectedIcon);
-    console.log(saveAlert);
   }, [selectedIcon])
+
 
   return (
     <Router>
