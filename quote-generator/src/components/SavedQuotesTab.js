@@ -1,8 +1,11 @@
-const SavedQuotesTab = ({ quoteCards }) => {
+import './SavedQuotesTab.css';
+
+const SavedQuotesTab = ({ darkMode, savedQuoteCards }) => {
+
     return ( 
-        <div className="saved-quotes-container">
-            {quoteCards}
-        </div>
+            <div className={darkMode ? "saved-quotes-container-dark" : "saved-quotes-container"}>
+                {savedQuoteCards}
+            </div>
      );
 }
  

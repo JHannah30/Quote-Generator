@@ -8,18 +8,21 @@ const MyQuotes = ({
     darkMode, 
     customQuotes,
     quotes,
+    addQuote,
 }) => {
 
     const [activeTab, setActiveTab] = useState("custom")
 
-    const quoteCards = quotes.map((quote) =>
-        <QuoteCard 
+    const savedQuoteCards = quotes.map((quote) => {
+        if(quote.favourited){
+            return <QuoteCard 
             darkMode={darkMode}
             quote={quote.quote}
             author={quote.author}
             image={quote.image}
-        />
-    )
+            />
+        }
+    })
 
     const showCustomQuotes = () => {
         setActiveTab("custom");
@@ -44,16 +47,24 @@ const MyQuotes = ({
                 <button className={ activeTab === "saved" ? "tab-btn right-tab active-tab" : "tab-btn right-tab" } onClick={showSavedQuotes}>Saved Quotes</button>
                 
                 {/* Add new quote button */}
-                <button className="add-quote-btn" onClick={createNewQuote}>Add New Quote</button>
-                
+                <button className="add-quote-btn" onClick={addQuote}>Add New Quote</button>
+
             </nav>
             <div className="quote-card-container">
                 
                 {/* Renders if Custom Quotes tab is active */}
-                {activeTab === "custom" && <CustomQuotesTab darkMode={darkMode} customQuotes={customQuotes} />}
+                {activeTab === "custom" && 
+                <CustomQuotesTab 
+                    darkMode={darkMode} 
+                    customQuotes={customQuotes} 
+                    addQuote={addQuote} 
+                />}
                 
                 {/* Renders if Saved Quotes tab is active */}
-                {activeTab === "saved" && <SavedQuotesTab quoteCards={quoteCards}/>}
+                {activeTab === "saved" && 
+                <SavedQuotesTab 
+                    savedQuoteCards={savedQuoteCards} 
+                />}
 
             </div>
         </div>

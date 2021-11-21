@@ -1,10 +1,10 @@
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import { QuoteData } from './data/QuoteData';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import MyQuotes from './components/MyQuotes';
-import { QuoteData } from './data/QuoteData';
 import AnonymousUser from './images/anonymous-profile.png';
 
 function App() {
@@ -40,15 +40,16 @@ function App() {
     addQuote();
 }
 
-const addQuote = () => {
-  setCustomQuotes([...customQuotes, {
-    id: quotes.length + 1,
-    quote: "This is a test to check if the object will be added",
-    author: "Jamie",
-    custom: true,
-    image: AnonymousUser,
-  }])
-}
+  //Test function to check is key/values are being added
+  const addQuote = () => {
+    setCustomQuotes([...customQuotes, {
+      id: quotes.length + 1,
+      quote: "This is a test to check if the object will be added",
+      author: "Jamie",
+      custom: true,
+      image: AnonymousUser,
+    }])
+  }
 
   // Shows alert on screen to let user know when a quote has been saved/unsaved.
   useEffect(() => {
@@ -94,7 +95,7 @@ const addQuote = () => {
                 darkMode={darkMode}
                 quotes={quotes}
                 customQuotes={customQuotes}
-                // addQuote={addQuote}
+                addQuote={addQuote}
               />
             </Route>
           </Switch>
