@@ -1,5 +1,4 @@
 import './MyQuotes.css';
-import QuoteCard from './QuoteCard';
 
 const MyQuotes = ({ 
     darkMode, 
