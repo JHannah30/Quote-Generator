@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import MyQuotes from './components/MyQuotes';
 import { QuoteData } from './data/QuoteData';
+import AnonymousUser from './images/anonymous-profile.png';
 
 function App() {
   
@@ -13,6 +14,7 @@ function App() {
   const [saveAlert, setSaveAlert] = useState(null)
   const [quotes, setQuotes] = useState([...QuoteData]);
   const [currentQuote, setCurrentQuote] = useState(quotes[Math.floor(Math.random() * 30)]);
+  const [customQuotes, setCustomQuotes] = useState([]);
 
   const handleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -39,11 +41,12 @@ function App() {
 }
 
 const addQuote = () => {
-  setQuotes([...quotes, {
+  setCustomQuotes([...customQuotes, {
     id: quotes.length + 1,
     quote: "This is a test to check if the object will be added",
     author: "Jamie",
     custom: true,
+    image: AnonymousUser,
   }])
 }
 
@@ -64,6 +67,7 @@ const addQuote = () => {
 
   useEffect(() => {
     console.log(quotes);
+    console.log(customQuotes);
   }, [quotes])
 
   return (
@@ -86,7 +90,11 @@ const addQuote = () => {
               />
             </Route>
             <Route path="/my-quotes">
-              <MyQuotes />
+              <MyQuotes 
+                darkMode={darkMode}
+                customQuotes={customQuotes}
+                addQuote={addQuote}
+              />
             </Route>
           </Switch>
         </div>

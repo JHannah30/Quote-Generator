@@ -16,3 +16,7 @@
 h4 {
   font-family: "Lato";
 }
+
+button {
+  cursor: pointer;
+}

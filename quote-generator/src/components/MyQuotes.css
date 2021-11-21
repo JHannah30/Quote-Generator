@@ -1,0 +1,51 @@
+.my-quotes {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab-bar {
+  width: 70vw;
+  height: 60px;
+  margin: 80px 0 40px 0;
+  border-bottom: solid 2px rgb(236, 208, 51);
+  display: flex;
+}
+
+.tab-btn {
+  padding: 6px 22px;
+  background-color: transparent;
+}
+
+.add-quote-btn {
+  background-color: transparent;
+  margin-left: auto;
+  margin-bottom: 10px;
+  padding: 6px 22px;
+  border-radius: 15px;
+  border: solid 3px #212121;
+  background-color: rgb(255, 225, 58);
+  font-weight: bold;
+  transition: all 0.2s linear;
+}
+
+.add-quote-btn:hover {
+  background-color: rgb(251, 231, 115);
+}
+
+/* Dark mode styling */
+.my-quotes-dark {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-quotes-dark button {
+  color: #ffffff;
+}
+
+.my-quotes-dark .add-quote-btn {
+  color: #212121;
+}
