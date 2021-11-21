@@ -30,7 +30,7 @@ import WayneGretzky from '../images/quote-authors/wayne-gretzky.png';
 
 export const QuoteData = [
     {
-        id: 1,
+        id: 0,
         quote: "The greatest glory in living lies not in never falling, but in rising every time we fall",
         author: "Nelson Mandela",
         image: NelsonMandela,
@@ -38,7 +38,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 2,
+        id: 1,
         quote: "The way to get started is to quit talking and begin doing",
         author: "Walt Disney",
         image: WaltDisney,
@@ -46,7 +46,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 3,
+        id: 2,
         quote: "Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking",
         author: "Steve Jobs",
         image: SteveJobs,
@@ -54,7 +54,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 4,
+        id: 3,
         quote: "If life were predictable it would cease to be life, and be without flavor",
         author: "Eleanor Roosevelt",
         image: EleanorRoosevelt,
@@ -62,7 +62,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 5,
+        id: 4,
         quote: "If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough",
         author: "Oprah Winfrey",
         image: OprahWinfrey,
@@ -70,7 +70,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 6,
+        id: 5,
         quote: "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success",
         author: "James Cameron",
         image: JamesCameron,
@@ -78,7 +78,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 7,
+        id: 6,
         quote: "Life is what happens when you're busy making other plans",
         author: "John Lennon",
         image: JohnLennon,
@@ -86,7 +86,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 8,
+        id: 7,
         quote: "Spread love everywhere you go. Let no one ever come to you without leaving happier",
         author: "Mother Theresa",
         image: MotherTheresa,
@@ -94,7 +94,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 9,
+        id: 8,
         quote: "When you reach the end of your rope, tie a knot in it and hang on",
         author: "Franklin D. Roosevelt",
         image: FranklinDRoosevelt,
@@ -102,7 +102,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 10,
+        id: 9,
         quote: "Always remember that you are absolutely unique. Just like everyone else",
         author: "Margaret Mead",
         image: MargaretMead,
@@ -110,7 +110,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 11,
+        id: 10,
         quote: "Don't judge each day by the harvest you reap but by the seeds that you plant",
         author: "Robert Louis Stevenson",
         image: RobertLouisStevenson,
@@ -118,7 +118,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 12,
+        id: 11,
         quote: "The future belongs to those who believe in the beauty of their dreams",
         author: "Eleanor Roosevelt",
         image: EleanorRoosevelt,
@@ -126,7 +126,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 13,
+        id: 12,
         quote: "Tell me and I forget. Teach me and I remember. Involve me and I learn",
         author: "Benjamin Franklin",
         image: BenjaminFranklin,
@@ -134,7 +134,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 14,
+        id: 13,
         quote: "The best and most beautiful things in the world cannot be seen or even touched — they must be felt with the heart",
         author: "Helen Keller",
         image: HelenKeller,
@@ -142,7 +142,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 15,
+        id: 14,
         quote: "It is during our darkest moments that we must focus to see the light",
         author: "Aristotle",
         image: Aristotle,
@@ -150,7 +150,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 16,
+        id: 15,
         quote: "Whoever is happy will make others happy too",
         author: "Anne Frank",
         image: AnneFrank,
@@ -158,7 +158,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 17,
+        id: 16,
         quote: "Do not go where the path may lead, go instead where there is no path and leave a trail",
         author: "Ralph Waldo Emerson",
         image: RalphWaldoEmerson,
@@ -166,7 +166,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 18,
+        id: 17,
         quote: "You will face many defeats in life, but never let yourself be defeated",
         author: "Maya Angelou",
         image: MayaAngelou,
@@ -174,7 +174,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 19,
+        id: 18,
         quote: "The greatest glory in living lies not in never falling, but in rising every time we fall",
         author: "Nelson Mandela",
         image: NelsonMandela,
@@ -182,7 +182,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 20,
+        id: 19,
         quote: "In the end, it's not the years in your life that count. It's the life in your years",
         author: "Abraham Lincoln",
         image: AbrahamLincoln,
@@ -190,7 +190,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 21,
+        id: 20,
         quote: "Never let the fear of striking out keep you from playing the game",
         author: "Babe Ruth",
         image: BabeRuth,
@@ -198,7 +198,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 22,
+        id: 21,
         quote: "Life is either a daring adventure or nothing at all",
         author: "Helen Keller",
         image: HelenKeller,
@@ -206,7 +206,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 23,
+        id: 22,
         quote: "Many of life's failures are people who did not realize how close they were to success when they gave up.",
         author: "Thomas A. Edison",
         image: ThomasEdison,
@@ -214,7 +214,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 24,
+        id: 23,
         quote: "You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose",
         author: "Dr. Seuss",
         image: DrSeuss,
@@ -222,7 +222,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 25,
+        id: 24,
         quote: "Success is not final; failure is not fatal: It is the courage to continue that counts",
         author: "Winston S. Churchill",
         image: WinstonChurchill,
@@ -230,7 +230,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 26,
+        id: 25,
         quote: "Success usually comes to those who are too busy to be looking for it",
         author: "Henry David Thoreau",
         image: HenryDavidThoreau,
@@ -238,7 +238,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 27,
+        id: 26,
         quote: "The secret of success is to do the common thing uncommonly well",
         author: "John D. Rockefeller Jr.",
         image: JohnDRockefellarJr,
@@ -246,7 +246,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 28,
+        id: 27,
         quote: "I find that the harder I work, the more luck I seem to have",
         author: "Thomas Jefferson",
         image: ThomasJefferson,
@@ -254,7 +254,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 29,
+        id: 28,
         quote: "Nothing is impossible, the word itself says, ‘I'm possible!'",
         author: "Audrey Hepburn",
         image: AudreyHepburn,
@@ -262,7 +262,7 @@ export const QuoteData = [
         favourited: false,
     },
     {
-        id: 30,
+        id: 29,
         quote: "You miss 100% of the shots you don't take",
         author: "Wayne Gretzky",
         image: WayneGretzky,

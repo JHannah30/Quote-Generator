@@ -11,7 +11,7 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [selectedIcon, setSelectedIcon] = useState(null);
   const [saveAlert, setSaveAlert] = useState(null)
-  const [quotes, setQuotes] = useState({ ...QuoteData });
+  const [quotes, setQuotes] = useState([...QuoteData]);
   const [currentQuote, setCurrentQuote] = useState(quotes[Math.floor(Math.random() * 30)]);
 
   const handleDarkMode = () => {
@@ -27,8 +27,24 @@ function App() {
   const handleSelectedIcon = () => {
     setSelectedIcon(!selectedIcon);
     let quoteID = currentQuote.id;
-    // Write code to say if quotes[item] matches quoteID, update data of that index to favourited:true
-  }
+    console.log("button is working");
+    setQuotes([...quotes, 
+      quotes.map(quote => {
+        if(quote.id === quoteID){
+          quote.favourited = !quote.favourited;
+        }
+      }),
+    ])
+    addQuote();
+}
+
+const addQuote = () => {
+  setQuotes([...quotes, {
+    id: quotes.length + 1,
+    quote: "I'm an idiot for mistaking { with [",
+    author: "Jamie",
+  }])
+}
 
   // Shows alert on screen to let user know when a quote has been saved/unsaved.
   useEffect(() => {
@@ -45,6 +61,9 @@ function App() {
     }
   }, [selectedIcon])
 
+  useEffect(() => {
+    console.log(quotes);
+  }, [quotes])
 
   return (
     <Router>

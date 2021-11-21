@@ -15,7 +15,7 @@ const Home = ({
             <section className="quote-body centered">
                 <h2 className="quote-text">'{quote.quote}'</h2>
                 <div className="author-body">
-                    <a href={quote.wiki} className="author-link">
+                    <a href={quote.wiki} target="_blank" rel="noreferrer" className="author-link">
                         <img className="author-image" src={quote.image} alt="Headshot of the quote's author" />
                         <h4 className="author-name">{quote.author}</h4>
                     </a>
