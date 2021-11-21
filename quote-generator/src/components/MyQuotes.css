@@ -38,6 +38,55 @@
   margin-bottom: 200px;
 }
 
+/* Quote cards styling */
+
+.quote-card {
+  width: 70vw;
+  height: 120px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  border: solid 1px #f2f2f2;
+}
+
+.quote-card-section {
+  width: 140px;
+  display: flex;
+  justify-content: center;
+}
+
+.quote-avatar {
+  transform: scale(0.7);
+}
+
+.quote-card-body {
+  width: 100%;
+}
+
+.remove-btn {
+  width: 36px;
+  height: 36px;
+  margin-left: 30px;
+  font-weight: bold;
+  color: #d3d3d3;
+  background-color: transparent;
+  border: solid 3px #d3d3d3;
+  border-radius: 50px;
+}
+
+.remove-btn:hover {
+  color: #d33f3f;
+  border: solid 1px #d33f3f;
+}
+
+.quote-card-text {
+  padding: 6px;
+}
+
+.quote-card-author {
+  padding: 6px;
+}
+
 /* Dark mode styling */
 .my-quotes-dark {
   width: 100vw;
@@ -52,4 +101,20 @@
 
 .my-quotes-dark .add-quote-btn {
   color: #212121;
+}
+
+.quote-card-dark {
+  width: 70vw;
+  height: 120px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  border: solid 1px #3f3f3f;
+}
+.quote-card-dark h4 {
+  color: #ffffff;
+}
+
+.quote-card-dark p {
+  color: #ffffff;
 }

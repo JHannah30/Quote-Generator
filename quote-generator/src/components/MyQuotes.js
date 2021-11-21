@@ -1,5 +1,4 @@
 import './MyQuotes.css';
-import { useState } from 'react';
 import QuoteCard from './QuoteCard';
 
 const MyQuotes = ({ 
@@ -7,6 +6,22 @@ const MyQuotes = ({
     customQuotes,
     quotes,
 }) => {
+
+    const quoteCards = quotes.map((quote) => 
+        <div className={ darkMode ? "quote-card-dark" : "quote-card" }>
+            <div className="quote-card-section">
+                <img className="quote-avatar" src={quote.image} alt="User avatar" />
+            </div>
+            <div className="quote-card-body">
+                <p className="quote-card-text">{quote.quote}</p>
+                <h4 className="quote-card-author">{quote.author}</h4>
+            </div>
+            <div className="quote-card-section">
+                <button className="remove-btn">x</button>
+            </div>
+
+        </div> 
+    )
 
     return ( 
         <div className={ darkMode ? "my-quotes-dark" : "my-quotes" }>
@@ -17,12 +32,7 @@ const MyQuotes = ({
             </nav>
             <div className="my-quotes-body">
                 {/* Render famous quotes array */}
-                {quotes.map((quote) => (
-                    <QuoteCard 
-                    darkMode={darkMode} 
-                    quotes={quotes}
-                    />
-                ))}
+                {quoteCards}
             </div>
         </div>
      );

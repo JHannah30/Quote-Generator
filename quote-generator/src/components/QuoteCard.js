@@ -5,7 +5,7 @@ const QuoteCard = ({
     darkMode,
     quote,
     author,
-    image
+    image,
 }) => {
 
 // const testData = {
