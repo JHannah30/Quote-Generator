@@ -41,8 +41,9 @@ function App() {
 const addQuote = () => {
   setQuotes([...quotes, {
     id: quotes.length + 1,
-    quote: "I'm an idiot for mistaking { with [",
+    quote: "This is a test to check if the object will be added",
     author: "Jamie",
+    custom: true,
   }])
 }
 
