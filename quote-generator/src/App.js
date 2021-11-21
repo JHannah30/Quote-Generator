@@ -14,7 +14,7 @@ function App() {
   const [saveAlert, setSaveAlert] = useState(null)
   const [quotes, setQuotes] = useState([...QuoteData]);
   const [currentQuote, setCurrentQuote] = useState(quotes[Math.floor(Math.random() * 30)]);
-  const [customQuotes, setCustomQuotes] = useState(null);
+  const [customQuotes, setCustomQuotes] = useState([]);
 
   const handleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -94,7 +94,7 @@ const addQuote = () => {
                 darkMode={darkMode}
                 quotes={quotes}
                 customQuotes={customQuotes}
-                addQuote={addQuote}
+                // addQuote={addQuote}
               />
             </Route>
           </Switch>

@@ -1,5 +1,6 @@
 import './MyQuotes.css';
 import { useState } from 'react';
+import QuoteCard from './QuoteCard';
 
 const MyQuotes = ({ 
     darkMode, 
@@ -9,20 +10,13 @@ const MyQuotes = ({
 
     const [activeTab, setActiveTab] = useState("custom")
 
-    // Creates a quote card for each object within the given array
-    const quoteCards = quotes.map((quote) => 
-        <div className={ darkMode ? "quote-card-dark" : "quote-card" }>
-            <div className="quote-card-section">
-                <img className="quote-avatar" src={quote.image} alt="User avatar" />
-            </div>
-            <div className="quote-card-body">
-                <p className="quote-card-text">{quote.quote}</p>
-                <h4 className="quote-card-author">{quote.author}</h4>
-            </div>
-            <div className="quote-card-section">
-                <button className="remove-btn">x</button>
-            </div>
-        </div> 
+    const quoteCards = quotes.map((quote) =>
+        <QuoteCard 
+            darkMode={darkMode}
+            quote={quote.quote}
+            author={quote.author}
+            image={quote.image}
+        />
     )
 
     const showCustomQuotes = () => {
@@ -36,22 +30,27 @@ const MyQuotes = ({
     return ( 
         <div className={ darkMode ? "my-quotes-dark" : "my-quotes" }>
             <nav className="tab-bar">
+                {/* Custom quotes button */}
                 <button className={ activeTab === "custom" ? "tab-btn left-tab active-tab" : "tab-btn left-tab" } onClick={showCustomQuotes}>Custom Quotes</button>
+                {/* Saved quotes button */}
                 <button className={ activeTab === "saved" ? "tab-btn right-tab active-tab" : "tab-btn right-tab" } onClick={showSavedQuotes}>Saved Quotes</button>
+                {/* Add new quote button */}
                 <button className="add-quote-btn">Add New Quote</button>
             </nav>
+            <div className="quote-card-container">
+                {/* Renders if Custom Quotes tab is active */}
+                {activeTab === "custom" && <div className="custom-quotes-body">
+                    <h2 className="custom-quotes-message">It looks like you haven't made any of your own quotes yet.</h2>
+                    <h2 className="create-quote-link">Create one?</h2>
+                </div>}
 
-            {/* Renders if Custom Quotes tab is active */}
-            {activeTab === "custom" && <div className="custom-body">
-                <h1 className="test">Custom tab is active</h1>
-            </div>}
-
-            {/* Renders if Saved Quotes tab is active */}
-            {activeTab === "saved" && <div className="custom-body">
-                <div className="my-quotes-body">
-                {quoteCards}
-                </div>
-            </div>}
+                {/* Renders if Saved Quotes tab is active */}
+                {activeTab === "saved" && <div className="custom-body">
+                    <div className="quote-cards">
+                    {quoteCards}
+                    </div>
+                </div>}
+            </div>
         </div>
      );
 }
