@@ -14,8 +14,24 @@
 }
 
 .tab-btn {
+  margin-bottom: -2px;
   padding: 6px 22px;
   background-color: transparent;
+  border: solid 2px rgb(236, 208, 51);
+  font-weight: bold;
+}
+
+.left-tab {
+  border-radius: 10px 0 0 0;
+}
+
+.right-tab {
+  border-radius: 0 10px 0 0;
+  margin-left: -1px;
+}
+
+.active-tab {
+  background-color: rgb(236, 208, 51);
 }
 
 .add-quote-btn {
@@ -100,6 +116,10 @@
 }
 
 .my-quotes-dark .add-quote-btn {
+  color: #212121;
+}
+
+.my-quotes-dark .active-tab {
   color: #212121;
 }
 
