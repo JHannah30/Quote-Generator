@@ -55,27 +55,6 @@
   justify-content: center;
 }
 
-.custom-quotes-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.custom-quotes-message {
-  width: 100%;
-  margin-top: 100px;
-  font-size: 1.7rem;
-}
-
-.create-quote-link {
-  width: 210px;
-  margin-top: 20px;
-  font-size: 1.7rem;
-  text-align: center;
-  cursor: pointer;
-  border-bottom: solid 5px rgb(236, 208, 51);
-}
-
 /* Dark mode styling */
 .my-quotes-dark {
   width: 100vw;
@@ -101,9 +80,5 @@
 }
 
 .my-quotes-dark .quote-card-container {
-  background-color: #3f3f3f;
-}
-
-.my-quotes-dark .create-quote-link {
-  color: rgb(236, 208, 51);
+  background-color: #2f2f2f;
 }

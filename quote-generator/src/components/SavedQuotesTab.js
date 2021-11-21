@@ -1,7 +1,7 @@
 const SavedQuotesTab = ({ quoteCards }) => {
     return ( 
-        <div>
-                {quoteCards}
+        <div className="saved-quotes-container">
+            {quoteCards}
         </div>
      );
 }

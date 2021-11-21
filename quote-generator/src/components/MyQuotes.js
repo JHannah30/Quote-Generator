@@ -2,6 +2,7 @@ import './MyQuotes.css';
 import { useState } from 'react';
 import QuoteCard from './QuoteCard';
 import SavedQuotesTab from './SavedQuotesTab';
+import CustomQuotesTab from './CustomQuotesTab';
 
 const MyQuotes = ({ 
     darkMode, 
@@ -44,17 +45,16 @@ const MyQuotes = ({
                 
                 {/* Add new quote button */}
                 <button className="add-quote-btn" onClick={createNewQuote}>Add New Quote</button>
+                
             </nav>
             <div className="quote-card-container">
                 
                 {/* Renders if Custom Quotes tab is active */}
-                {activeTab === "custom" && <div className="custom-quotes-body">
-                    <h2 className="custom-quotes-message">It looks like you haven't made any of your own quotes yet.</h2>
-                    <h2 className="create-quote-link" onClick={createNewQuote}>Create one?</h2>
-                </div>}
-
+                {activeTab === "custom" && <CustomQuotesTab darkMode={darkMode} customQuotes={customQuotes} />}
+                
                 {/* Renders if Saved Quotes tab is active */}
                 {activeTab === "saved" && <SavedQuotesTab quoteCards={quoteCards}/>}
+
             </div>
         </div>
      );

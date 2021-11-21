@@ -1,0 +1,27 @@
+.custom-quotes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-quotes-message {
+  width: 100%;
+  margin-top: 100px;
+  font-size: 1.7rem;
+}
+
+.create-quote-link {
+  width: 210px;
+  margin-top: 20px;
+  font-size: 1.7rem;
+  text-align: center;
+  cursor: pointer;
+  border-bottom: solid 5px rgb(236, 208, 51);
+}
+
+/* Dark mode styling */
+.custom-quotes-container-dark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
