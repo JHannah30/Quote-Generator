@@ -9,7 +9,7 @@ import { QuoteData } from './data/QuoteData';
 function App() {
   
   const [darkMode, setDarkMode] = useState(false);
-  const [selectedIcon, setSelectedIcon] = useState(false);
+  const [selectedIcon, setSelectedIcon] = useState(null);
   const [saveAlert, setSaveAlert] = useState(null)
   const [quotes, setQuotes] = useState({ ...QuoteData });
   const [currentQuote, setCurrentQuote] = useState(quotes[Math.floor(Math.random() * 30)]);
@@ -34,12 +34,12 @@ function App() {
       setSaveAlert("Saved");
       setTimeout(() => {
         setSaveAlert(null)
-      }, 1200)
-    } else if(!selectedIcon){
+      }, 1000)
+    } else if(selectedIcon === false){
       setSaveAlert("Removed")
       setTimeout(() => {
         setSaveAlert(null)
-      }, 1200)
+      }, 1000)
     }
     console.log(selectedIcon);
     console.log(saveAlert);
