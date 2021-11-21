@@ -4,6 +4,7 @@ import ToggleHeartIcon from './ToggleHeartIcon';
 const Home = ({ 
     quote,
     darkMode,
+    saveAlert,
     selectedIcon,
     newQuote,
     handleSelectedIcon 
@@ -22,6 +23,9 @@ const Home = ({
                         selectedIcon={selectedIcon}
                         handleSelectedIcon={handleSelectedIcon}
                     />
+                    <div className={ saveAlert === null ? "hide" : "save-alert" }>
+                        <p className="save-notification">{saveAlert}</p>
+                    </div>
                 </div>
             </section>
             <section className="quote-actions">
