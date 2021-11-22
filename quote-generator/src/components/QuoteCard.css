@@ -24,19 +24,19 @@
 }
 
 .remove-btn {
-  width: 36px;
-  height: 36px;
-  /* margin-left: 30px; */
+  width: 48px;
+  height: 48px;
+  font-size: 1.5rem;
   font-weight: bold;
-  color: #d3d3d3;
+  color: #b4b4b4;
   background-color: transparent;
-  border: solid 3px #d3d3d3;
+  border: none;
   border-radius: 50px;
 }
 
 .remove-btn:hover {
-  color: #d33f3f;
-  border: solid 1px #d33f3f;
+  color: #ffffff;
+  background-color: #d15151;
 }
 
 .quote-card-text {
@@ -65,4 +65,8 @@
 
 .quote-card-dark p {
   color: #ffffff;
+}
+
+.quote-card-dark .remove-btn:hover {
+  color: #212121;
 }
