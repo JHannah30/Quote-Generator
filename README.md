@@ -1,6 +1,6 @@
 # Quote-Generator
 
-# Check it out
+## Check it out in your browser
 
 https://quotational.netlify.app/
 
