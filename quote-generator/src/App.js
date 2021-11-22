@@ -5,8 +5,6 @@ import { QuoteData } from './data/QuoteData';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import MyQuotes from './components/MyQuotes';
-import SavedQuotesTab from './components/SavedQuotesTab';
-// import AnonymousUser from './images/anonymous-profile.png';
 
 function App() {
   
@@ -51,51 +49,34 @@ function App() {
         }
       }),
     ])
-    // addQuote();
 }
 
-  //Test function to check is key/values are being added
-  // const addQuote = () => {
-  //   setCustomQuotes([...customQuotes, {
-  //     id: quotes.length + 1,
-  //     quote: "This is a test to check if the object will be added",
-  //     author: "Jamie",
-  //     custom: true,
-  //     image: AnonymousUser,
-  //   }])
-  // }
+  // Shows alert on screen to let user know when a quote has been saved/unsaved.
+  useEffect(() => {
+    if(selectedIcon){
+      setSaveAlert("Saved");
+      setTimeout(() => {
+        setSaveAlert(null)
+      }, 1000)
+    } else if(selectedIcon === false){
+      setSaveAlert("Removed")
+      setTimeout(() => {
+        setSaveAlert(null)
+      }, 1000)
+    }
+  }, [selectedIcon])    
 
-  function testFunction(){
-    console.log("test");
+  // Takes new quote form inputs and adds them 
+  const addNewQuote = (newEntry) => {
+      setCustomQuotes((prevQuotes) => {
+          return [...prevQuotes, newEntry]
+      })
   }
 
-  // Shows alert on screen to let user know when a quote has been saved/unsaved.
-  // useEffect(() => {
-  //   if(selectedIcon){
-  //     setSaveAlert("Saved");
-  //     setTimeout(() => {
-  //       setSaveAlert(null)
-  //     }, 1000)
-  //   } else if(selectedIcon === false){
-  //     setSaveAlert("Removed")
-  //     setTimeout(() => {
-  //       setSaveAlert(null)
-  //     }, 1000)
-  //   }
-  // }, [selectedIcon])
-
-  // Testing to check state of quotes and customQuotes when they are changed
   useEffect(() => {
-    console.log("famous quotes");
-    console.log(quotes);
-  }, [quotes])
-
-  useEffect(() => {
-    console.log("custom quotes");
-    console.log(customQuotes);
+      console.log(customQuotes)
   }, [customQuotes])
-
-
+  
   return (
     <Router>
       <div className={darkMode ? "App dark-bg" : "App"}>
@@ -120,8 +101,7 @@ function App() {
                 darkMode={darkMode}
                 quotes={quotes}
                 customQuotes={customQuotes}
-                // addQuote={addQuote}
-                test={testFunction}
+                addNewQuote={addNewQuote}
               />
             </Route>
           </Switch>

@@ -1,9 +1,6 @@
 import './SavedQuotesTab.css';
 
-const SavedQuotesTab = ({ darkMode, savedQuoteCards }) => {
-
-    console.log(savedQuoteCards[0]);
-
+const SavedQuotesTab = ({ savedQuoteCards }) => {
     return ( 
             <>
                 <div >

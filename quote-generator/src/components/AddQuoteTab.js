@@ -1,22 +1,38 @@
 import './AddQuoteTab.css';
 import { useState } from 'react';
+import AnonymousUser from '../images/anonymous-profile.png';
 
-const AddQuoteTab = ({ darkMode }) => {
-    const [inputs, setInputs] = useState({});
 
-    const handleChange = (event) => {
-        const name = event.target.name;
-        const value = event.target.value;
-        setInputs(values => ({...values, [name]: value}))
+const AddQuoteTab = ({ 
+    darkMode, 
+    addNewQuote,
+    showCustomQuotesTab
+}) => {
+
+    const [newQuoteData, setNewQuoteData] = useState([]);
+    
+    const handleChange = (e) => {
+        const name = e.target.name;
+        const value = e.target.value;
+        setNewQuoteData(values => ({...values, [name]: value}))    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const newQuote = {
+            id: Math.floor(Math.random() * 10000),
+            author: newQuoteData.author,
+            quote: newQuoteData.quote,
+            image: AnonymousUser,
+        }
+
+        console.log(newQuote);
+
+        addNewQuote(newQuote);
+        e.target.reset();
+        setNewQuoteData([]);
+        showCustomQuotesTab();
     }
-
-    const handleSubmit = (event) => {
-        event.preventDefault();
-    }
-
-function test(){
-    console.log(inputs);
-}
 
     return ( 
         <div className={darkMode ? "add-quote-container-dark" : "add-quote-container"}>
@@ -25,21 +41,21 @@ function test(){
                 <input 
                     className="form-input-text"
                     type="text" 
-                    name="name" 
-                    value={inputs.name} 
+                    name="author" 
+                    value={newQuoteData.author} 
                     onChange={handleChange}
                 />
                 <label className="form-label">Give us a few words of wisdom</label>
                     <textarea 
                         className="form-input-textarea"
                         name="quote"
-                        value={inputs.quote} 
+                        value={newQuoteData.quote} 
                         onChange={handleChange} 
                     />
                 <input 
                     className="form-submit-btn"
-                    type="submit" 
-                    onClick={test}/>
+                    type="submit"
+                    />
             </form>
         </div>
      );
