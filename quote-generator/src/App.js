@@ -69,9 +69,9 @@ function App() {
 
   // Removed item from state array
   const removeEntry = (id) => {
-    // remove from array
-    console.log("Button clicked")
-    console.log("ID = " + id)
+    setCustomQuotes(customQuotes.filter((quote) => {
+      return id !== quote.id
+    }))
   }
 
   // Change item from favourited to not favourited
