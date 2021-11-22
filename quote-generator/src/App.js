@@ -88,9 +88,9 @@ function App() {
 
   // Takes new quote form inputs and adds them 
   const addNewQuote = (newEntry) => {
-      setCustomQuotes((prevQuotes) => {
-          return [...prevQuotes, newEntry]
-      })
+    setCustomQuotes((prevQuotes) => {
+      return [...prevQuotes, newEntry]
+    })
   }
   
   return (
