@@ -27,7 +27,7 @@ const MyQuotes = ({
             handleClick={removeEntry}
             />
     })
-
+ 
     // Takes in the quotes state and renders a component for each array value
     const savedQuoteCards = quotes.map((quote) => {
         if(quote.favourited){
