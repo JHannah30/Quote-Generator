@@ -48,6 +48,16 @@
 /* Dark mode styling */
 .add-quote-container-dark {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+.add-quote-container-dark .form-label {
+  color: #ffffff;
+}
+
+.add-quote-container-dark .form-input-text {
+  background-color: #f2f2f2;
+}
+
+.add-quote-container-dark .form-input-textarea {
+  background-color: #f2f2f2;
 }

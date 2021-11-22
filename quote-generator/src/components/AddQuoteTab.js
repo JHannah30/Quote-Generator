@@ -12,7 +12,6 @@ const AddQuoteTab = ({ darkMode }) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        alert(inputs);
     }
 
 function test(){
