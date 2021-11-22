@@ -29,7 +29,6 @@ function App() {
   // Changes appearance of saved/favourited icon when clicked
   const handleSelectedIcon = () => {
     setSelectedIcon(!selectedIcon);
-
     if(selectedIcon){
       setSaveAlert("Saved");
       setTimeout(() => {
@@ -41,15 +40,16 @@ function App() {
         setSaveAlert(null)
       }, 1000)
     }
-
+    // Updates the value based on if the quote has been favourited or not
     let quoteID = currentQuote.id;
-    setQuotes([...quotes, 
-      quotes.map(quote => {
-        if(quote.id === quoteID){
-          quote.favourited = !quote.favourited;
+    for(let i = 0; i < quotes.length; i++){
+        if(quotes[i].id === quoteID){
+          setQuotes([...quotes,
+            //----- This needs fixing. The below value is updating state, whilst adding a new array item ----//
+            quotes[i].favourited = !quotes[i].favourited
+          ])
         }
-      }),
-    ])
+    }
   }
 
   // Shows alert on screen to let user know when a quote has been saved/unsaved.
@@ -75,10 +75,15 @@ function App() {
   }
 
   // Change item from favourited to not favourited
-  const removeFavourited = (id) => {
-    // change favourited: false
-    console.log("Button clicked")
-    console.log("ID = " + id)
+  const removeFavourited = (n) => {
+    for(let i = 0; i < quotes.length; i++){
+      if(quotes[i].id === n){
+        setQuotes([...quotes,
+          //----- This needs fixing. The below value is updating state, whilst adding a new array item ----//
+          quotes[i].favourited = !quotes[i].favourited
+        ])
+      }
+    }
   }
 
   // Takes new quote form inputs and adds them 
