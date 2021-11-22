@@ -5,6 +5,7 @@ import { QuoteData } from './data/QuoteData';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import MyQuotes from './components/MyQuotes';
+import SavedQuotesTab from './components/SavedQuotesTab';
 // import AnonymousUser from './images/anonymous-profile.png';
 
 function App() {
@@ -15,7 +16,6 @@ function App() {
   const [quotes, setQuotes] = useState([...QuoteData]);
   const [currentQuote, setCurrentQuote] = useState(quotes[Math.floor(Math.random() * 30)]);
   const [customQuotes, setCustomQuotes] = useState([]);
-  const [activeTab, setActiveTab] = useState("custom");
 
   const handleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -30,8 +30,20 @@ function App() {
   // Changes appearance of save icon when clicked
   const handleSelectedIcon = () => {
     setSelectedIcon(!selectedIcon);
+
+    if(selectedIcon){
+      setSaveAlert("Saved");
+      setTimeout(() => {
+        setSaveAlert(null)
+      }, 1000)
+    } else if(selectedIcon === false){
+      setSaveAlert("Removed")
+      setTimeout(() => {
+        setSaveAlert(null)
+      }, 1000)
+    }
+
     let quoteID = currentQuote.id;
-    console.log("button is working");
     setQuotes([...quotes, 
       quotes.map(quote => {
         if(quote.id === quoteID){
@@ -58,27 +70,31 @@ function App() {
   }
 
   // Shows alert on screen to let user know when a quote has been saved/unsaved.
-  useEffect(() => {
-    if(selectedIcon){
-      setSaveAlert("Saved");
-      setTimeout(() => {
-        setSaveAlert(null)
-      }, 1000)
-    } else if(selectedIcon === false){
-      setSaveAlert("Removed")
-      setTimeout(() => {
-        setSaveAlert(null)
-      }, 1000)
-    }
-  }, [selectedIcon])
+  // useEffect(() => {
+  //   if(selectedIcon){
+  //     setSaveAlert("Saved");
+  //     setTimeout(() => {
+  //       setSaveAlert(null)
+  //     }, 1000)
+  //   } else if(selectedIcon === false){
+  //     setSaveAlert("Removed")
+  //     setTimeout(() => {
+  //       setSaveAlert(null)
+  //     }, 1000)
+  //   }
+  // }, [selectedIcon])
 
+  // Testing to check state of quotes and customQuotes when they are changed
   useEffect(() => {
+    console.log("famous quotes");
     console.log(quotes);
   }, [quotes])
 
   useEffect(() => {
+    console.log("custom quotes");
     console.log(customQuotes);
   }, [customQuotes])
+
 
   return (
     <Router>
@@ -91,8 +107,8 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Home 
-                quote={currentQuote}
                 darkMode={darkMode}
+                currentQuote={currentQuote}
                 selectedIcon={selectedIcon}
                 saveAlert={saveAlert}
                 newQuote={getNewQuote}
@@ -103,7 +119,6 @@ function App() {
               <MyQuotes 
                 darkMode={darkMode}
                 quotes={quotes}
-                activeTab={activeTab}
                 customQuotes={customQuotes}
                 // addQuote={addQuote}
                 test={testFunction}

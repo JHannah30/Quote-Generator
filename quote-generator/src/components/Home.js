@@ -2,7 +2,7 @@ import './Home.css';
 import ToggleHeartIcon from './ToggleHeartIcon';
 
 const Home = ({ 
-    quote,
+    currentQuote,
     darkMode,
     saveAlert,
     selectedIcon,
@@ -13,13 +13,14 @@ const Home = ({
     return ( 
         <div className={ darkMode ? "home-dark" : "home" }>
             <section className="quote-body centered">
-                <h2 className="quote-text">'{quote.quote}'</h2>
+                <h2 className="quote-text">'{currentQuote.quote}'</h2>
                 <div className="author-body">
-                    <a href={quote.wiki} target="_blank" rel="noreferrer" className="author-link">
-                        <img className="author-image" src={quote.image} alt="Headshot of the quote's author" />
-                        <h4 className="author-name">{quote.author}</h4>
+                    <a href={currentQuote.wiki} target="_blank" rel="noreferrer" className="author-link">
+                        <img className="author-image" src={currentQuote.image} alt="Headshot of the quote's author" />
+                        <h4 className="author-name">{currentQuote.author}</h4>
                     </a>
                     <ToggleHeartIcon 
+                        quoteFavourited={currentQuote.favourited}
                         selectedIcon={selectedIcon}
                         handleSelectedIcon={handleSelectedIcon}
                     />

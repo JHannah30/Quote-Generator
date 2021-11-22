@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 import NavLogoLight from '../images/logo-black.png';
@@ -10,10 +10,6 @@ const Navbar = ({ handleDarkMode, darkMode }) => {
 
     const { pathname } = useLocation();
     const [toggleActive, setToggleActive] = useState(pathname);
-
-    // useEffect(() => {
-    //     console.log(pathname)
-    // }, [toggleActive])
 
     return ( 
         <div className="navbar-container">
