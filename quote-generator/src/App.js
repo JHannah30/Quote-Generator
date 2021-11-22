@@ -15,6 +15,7 @@ function App() {
   const [currentQuote, setCurrentQuote] = useState(quotes[Math.floor(Math.random() * 30)]);
   const [customQuotes, setCustomQuotes] = useState([]);
 
+  //Toggles darkmode as active/inactive
   const handleDarkMode = () => {
     setDarkMode(!darkMode);
   } 
@@ -25,7 +26,7 @@ function App() {
     setCurrentQuote(quotes[Math.floor(Math.random() * 30)]);
   }
 
-  // Changes appearance of save icon when clicked
+  // Changes appearance of saved/favourited icon when clicked
   const handleSelectedIcon = () => {
     setSelectedIcon(!selectedIcon);
 
@@ -49,7 +50,7 @@ function App() {
         }
       }),
     ])
-}
+  }
 
   // Shows alert on screen to let user know when a quote has been saved/unsaved.
   useEffect(() => {
@@ -66,16 +67,26 @@ function App() {
     }
   }, [selectedIcon])    
 
+  // Removed item from state array
+  const removeEntry = (id) => {
+    // remove from array
+    console.log("Button clicked")
+    console.log("ID = " + id)
+  }
+
+  // Change item from favourited to not favourited
+  const removeFavourited = (id) => {
+    // change favourited: false
+    console.log("Button clicked")
+    console.log("ID = " + id)
+  }
+
   // Takes new quote form inputs and adds them 
   const addNewQuote = (newEntry) => {
       setCustomQuotes((prevQuotes) => {
           return [...prevQuotes, newEntry]
       })
   }
-
-  useEffect(() => {
-      console.log(customQuotes)
-  }, [customQuotes])
   
   return (
     <Router>
@@ -102,6 +113,8 @@ function App() {
                 quotes={quotes}
                 customQuotes={customQuotes}
                 addNewQuote={addNewQuote}
+                removeEntry={removeEntry}
+                removeFavourited={removeFavourited}
               />
             </Route>
           </Switch>

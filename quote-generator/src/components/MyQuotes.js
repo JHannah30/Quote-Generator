@@ -1,5 +1,5 @@
 import './MyQuotes.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import QuoteCard from './QuoteCard';
 import SavedQuotesTab from './SavedQuotesTab';
 import CustomQuotesTab from './CustomQuotesTab';
@@ -9,7 +9,9 @@ const MyQuotes = ({
     darkMode, 
     quotes,
     customQuotes,
-    addNewQuote
+    addNewQuote,
+    removeEntry,
+    removeFavourited
 }) => {
 
     const [activeTab, setActiveTab] = useState("saved");
@@ -18,9 +20,11 @@ const MyQuotes = ({
     const customQuoteCards = customQuotes.map((quote) => {
         return <QuoteCard 
             darkMode={darkMode}
+            id={quote.id}
             quote={quote.quote}
             author={quote.author}
             image={quote.image}
+            handleClick={removeEntry}
             />
     })
 
@@ -28,10 +32,12 @@ const MyQuotes = ({
     const savedQuoteCards = quotes.map((quote) => {
         if(quote.favourited){
             return <QuoteCard 
+            id={quote.id}
             darkMode={darkMode}
             quote={quote.quote}
             author={quote.author}
             image={quote.image}
+            handleClick={removeFavourited}
             />
         }
     })
