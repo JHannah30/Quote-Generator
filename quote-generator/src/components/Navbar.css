@@ -34,7 +34,7 @@
 
 /* Change this property to something nicer looking, that let's the user know when they're on that page */
 .navlink-active {
-  border-bottom: 4px solid rgb(236, 208, 51);
+  border-bottom: 3px solid rgb(236, 208, 51);
 }
 
 /* Dark Mode Styling */

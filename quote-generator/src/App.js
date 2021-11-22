@@ -23,7 +23,7 @@ function App() {
     return localData ? JSON.parse(localData) : [];
   });
 
-    // // Saving state to local storage
+  // // Saving state to local storage
   useEffect(() => {
     localStorage.setItem('customQuotes', JSON.stringify(customQuotes))
   }, [customQuotes]);
@@ -57,12 +57,14 @@ function App() {
         setSaveAlert(null)
       }, 1000)
     }
+
     // Updates the value based on if the quote has been favourited or not
     let quoteID = currentQuote.id;
     for(let i = 0; i < quotes.length; i++){
         if(quotes[i].id === quoteID){
           setQuotes([...quotes,
-            //----- This needs fixing. The below value is updating state, whilst adding a new array item ----//
+            
+            // !!--- This code needs changing. The below value is updating state, whilst adding a new array item ---!! //
             quotes[i].favourited = !quotes[i].favourited
           ])
         }
@@ -84,7 +86,7 @@ function App() {
     }
   }, [selectedIcon])    
 
-  // Removed item from state array
+  // Used to remove listed QuoteCards from rendered list when delete button is clicked
   const removeEntry = (id) => {
     setCustomQuotes(customQuotes.filter((quote) => {
       return id !== quote.id
@@ -109,26 +111,6 @@ function App() {
       return [...prevQuotes, newEntry]
     })
   }
-
-  // useEffect(() => {
-  //   console.log("useEffect ran on update")
-  //   console.log(customQuotes)
-  //   localStorage.setItem('customQuotes', JSON.stringify(customQuotes));
-  //   localStorage.setItem('savedQuotes', JSON.stringify(quotes))
-  // }, [quotes, customQuotes]);
-
-  // useEffect(() => {
-  //   console.log("useEffect ran on initial render")
-  //   console.log(customQuotes)
-  //   const customQuoteData = localStorage.getItem('customQuotes');
-  //   if(customQuoteData) {
-  //     setCustomQuotes(JSON.parse(customQuoteData));
-  //   }
-  //   const savedQuoteData = localStorage.getItem('customQuotes');
-  //   if(savedQuoteData) {
-  //     setCustomQuotes(JSON.parse(savedQuoteData));
-  //   }
-  // }, []);
    
   return (
     <Router>

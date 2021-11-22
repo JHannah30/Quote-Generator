@@ -7,18 +7,19 @@
 
 .tab-bar {
   width: 70vw;
-  height: 60px;
-  margin: 60px 0 40px 0;
-  border-bottom: solid 2px rgb(236, 208, 51);
+  height: 50px;
+  margin: 50px 0 0 0;
   display: flex;
 }
 
 .tab-btn {
   margin-bottom: -2px;
-  padding: 6px 22px;
+  padding: 4px 18px;
   background-color: transparent;
-  border: solid 2px rgb(236, 208, 51);
+  border: solid 1.5px rgb(236, 208, 51);
   font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: -1px;
 }
 
 .left-tab {
@@ -27,7 +28,6 @@
 
 .right-tab {
   border-radius: 0 10px 0 0;
-  margin-left: -1px;
 }
 
 .active-tab {
@@ -42,11 +42,12 @@
   border: solid 1px #2f2f2f;
   background-color: rgb(236, 208, 51);
   font-weight: bold;
+  font-size: 1rem;
 }
 
 .quote-card-container {
   width: 70vw;
-  height: 600px;
+  height: 63vh;
   overflow-y: scroll;
   background-color: #f2f2f2;
   display: flex;

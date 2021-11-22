@@ -14,22 +14,19 @@ const AddQuoteTab = ({
     const handleChange = (e) => {
         const name = e.target.name;
         const value = e.target.value;
-        setNewQuoteData(values => ({...values, [name]: value}))    }
+        setNewQuoteData(values => ({...values, [name]: value}))    
+    }
 
+    // On form submission, data is saved as a new quote and passed up into App.js
     const handleSubmit = (e) => {
         e.preventDefault();
-
         const newQuote = {
             id: Math.floor(Math.random() * 10000),
             author: newQuoteData.author,
             quote: newQuoteData.quote,
             image: AnonymousUser,
         }
-
-        console.log(newQuote);
-
         addNewQuote(newQuote);
-        e.target.reset();
         setNewQuoteData([]);
         showCustomQuotesTab();
     }
