@@ -5,7 +5,7 @@ import { QuoteData } from './data/QuoteData';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import MyQuotes from './components/MyQuotes';
-import AnonymousUser from './images/anonymous-profile.png';
+// import AnonymousUser from './images/anonymous-profile.png';
 
 function App() {
   
@@ -19,7 +19,7 @@ function App() {
 
   const handleDarkMode = () => {
     setDarkMode(!darkMode);
-  }
+  } 
 
   // Shows a random quote on screen when the New Quote button is clicked
   const getNewQuote = () => {
@@ -39,19 +39,19 @@ function App() {
         }
       }),
     ])
-    addQuote();
+    // addQuote();
 }
 
   //Test function to check is key/values are being added
-  const addQuote = () => {
-    setCustomQuotes([...customQuotes, {
-      id: quotes.length + 1,
-      quote: "This is a test to check if the object will be added",
-      author: "Jamie",
-      custom: true,
-      image: AnonymousUser,
-    }])
-  }
+  // const addQuote = () => {
+  //   setCustomQuotes([...customQuotes, {
+  //     id: quotes.length + 1,
+  //     quote: "This is a test to check if the object will be added",
+  //     author: "Jamie",
+  //     custom: true,
+  //     image: AnonymousUser,
+  //   }])
+  // }
 
   function testFunction(){
     console.log("test");
@@ -105,7 +105,7 @@ function App() {
                 quotes={quotes}
                 activeTab={activeTab}
                 customQuotes={customQuotes}
-                addQuote={addQuote}
+                // addQuote={addQuote}
                 test={testFunction}
               />
             </Route>

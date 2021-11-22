@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 import NavLogoLight from '../images/logo-black.png';
 import NavLogoDark from '../images/logo-white.png';
@@ -8,7 +8,12 @@ import DarkModeIconWhite from '../images/dark-mode-white.png';
 
 const Navbar = ({ handleDarkMode, darkMode }) => {
 
-    const [toggleActive, setToggleActive] = useState("home");
+    const { pathname } = useLocation();
+    const [toggleActive, setToggleActive] = useState(pathname);
+
+    // useEffect(() => {
+    //     console.log(pathname)
+    // }, [toggleActive])
 
     return ( 
         <div className="navbar-container">
@@ -17,14 +22,14 @@ const Navbar = ({ handleDarkMode, darkMode }) => {
                 <div className="nav-links">
                     <Link 
                         to="/" 
-                        onClick={() =>setToggleActive("home")} 
-                        className={ toggleActive === "home" ? "navlink-active" : "navlink" }
+                        onClick={() => setToggleActive("/")} 
+                        className={ toggleActive === "/" ? "navlink-active" : "navlink" }
                         >Home
                     </Link>
                     <Link 
                         to="/my-quotes" 
-                        onClick={() => setToggleActive("myQuotes")} 
-                        className={ toggleActive === "myQuotes" ? "navlink-active" : "navlink" }
+                        onClick={() => setToggleActive("/my-quotes")} 
+                        className={ toggleActive === "/my-quotes" ? "navlink-active" : "navlink" }
                         >My Quotes
                     </Link>
                 </div>

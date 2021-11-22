@@ -2,7 +2,7 @@ import './AddQuoteTab.css';
 import { useState } from 'react';
 
 const AddQuoteTab = ({ darkMode }) => {
-    const [inputs, setInputs] = useState({})
+    const [inputs, setInputs] = useState({});
 
     const handleChange = (event) => {
         const name = event.target.name;
