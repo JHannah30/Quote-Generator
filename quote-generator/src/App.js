@@ -15,6 +15,7 @@ function App() {
   const [quotes, setQuotes] = useState([...QuoteData]);
   const [currentQuote, setCurrentQuote] = useState(quotes[Math.floor(Math.random() * 30)]);
   const [customQuotes, setCustomQuotes] = useState([]);
+  const [activeTab, setActiveTab] = useState("custom");
 
   const handleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -50,6 +51,10 @@ function App() {
       custom: true,
       image: AnonymousUser,
     }])
+  }
+
+  function testFunction(){
+    console.log("test");
   }
 
   // Shows alert on screen to let user know when a quote has been saved/unsaved.
@@ -98,8 +103,10 @@ function App() {
               <MyQuotes 
                 darkMode={darkMode}
                 quotes={quotes}
+                activeTab={activeTab}
                 customQuotes={customQuotes}
                 addQuote={addQuote}
+                test={testFunction}
               />
             </Route>
           </Switch>

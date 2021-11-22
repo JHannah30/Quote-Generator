@@ -35,15 +35,13 @@
 }
 
 .add-quote-btn {
-  background-color: transparent;
   margin-left: auto;
   margin-bottom: 10px;
   padding: 6px 22px;
   border-radius: 10px;
-  border: none;
+  border: solid 1px #2f2f2f;
   background-color: rgb(236, 208, 51);
   font-weight: bold;
-  transition: all 0.2s linear;
 }
 
 .quote-card-container {

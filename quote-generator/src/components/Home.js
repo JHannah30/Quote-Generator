@@ -7,7 +7,7 @@ const Home = ({
     saveAlert,
     selectedIcon,
     newQuote,
-    handleSelectedIcon 
+    handleSelectedIcon,
 }) => {
 
     return ( 

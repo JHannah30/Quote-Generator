@@ -22,10 +22,6 @@
   text-decoration: none;
 }
 
-.navbar a:hover {
-  color: rgb(236, 208, 51);
-}
-
 .dark-mode-icon {
   margin-left: 48px;
   cursor: pointer;

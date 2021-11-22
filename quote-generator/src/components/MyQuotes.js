@@ -3,16 +3,19 @@ import { useState } from 'react';
 import QuoteCard from './QuoteCard';
 import SavedQuotesTab from './SavedQuotesTab';
 import CustomQuotesTab from './CustomQuotesTab';
+import AddQuoteTab from './AddQuoteTab';
 
 const MyQuotes = ({ 
     darkMode, 
     customQuotes,
     quotes,
     addQuote,
+    test
 }) => {
 
     const [activeTab, setActiveTab] = useState("custom");
 
+    // Takes in the quotes state and renders a component for each array value
     const savedQuoteCards = quotes.map((quote) => {
         if(quote.favourited){
             return <QuoteCard 
@@ -24,6 +27,7 @@ const MyQuotes = ({
         }
     })
 
+    // Takes in the customQuotes state and renders a component for each array value
     const customQuoteCards = customQuotes.map((quote) => {
         return <QuoteCard 
             darkMode={darkMode}
@@ -41,6 +45,10 @@ const MyQuotes = ({
         setActiveTab("saved");
     }
 
+    const showNewQuoteTab = () => {
+        setActiveTab("newQuote")
+    }
+
     return ( 
         <div className={ darkMode ? "my-quotes-dark" : "my-quotes" }>
             <nav className="tab-bar">
@@ -52,7 +60,7 @@ const MyQuotes = ({
                 <button className={ activeTab === "saved" ? "tab-btn right-tab active-tab" : "tab-btn right-tab" } onClick={showSavedQuotes}>Saved Quotes</button>
                 
                 {/* Add new quote button */}
-                <button className="add-quote-btn" onClick={addQuote}>Add New Quote</button>
+                <button className="add-quote-btn" onClick={showNewQuoteTab}>Add New Quote</button>
 
             </nav>
             <div className="quote-card-container">
@@ -62,13 +70,20 @@ const MyQuotes = ({
                 <CustomQuotesTab 
                     darkMode={darkMode} 
                     customQuotes={customQuoteCards} 
-                    addQuote={addQuote} 
+                    addQuote={showNewQuoteTab} 
                 />}
                 
                 {/* Renders if Saved Quotes tab is active */}
                 {activeTab === "saved" && 
                 <SavedQuotesTab 
                     savedQuoteCards={savedQuoteCards} 
+                />}
+
+                {/* Renders if new quote button/link have been clicked */}
+                {activeTab === "newQuote" && 
+                <AddQuoteTab 
+                    darkMode={darkMode}
+                    test={test}
                 />}
 
             </div>
