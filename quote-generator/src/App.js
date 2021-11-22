@@ -22,6 +22,7 @@ function App() {
 
   // Shows a random quote on screen when the New Quote button is clicked
   const getNewQuote = () => {
+    setSelectedIcon(null);
     setCurrentQuote(quotes[Math.floor(Math.random() * 30)]);
   }
 

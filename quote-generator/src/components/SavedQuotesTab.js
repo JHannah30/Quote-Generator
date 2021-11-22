@@ -2,10 +2,14 @@ import './SavedQuotesTab.css';
 
 const SavedQuotesTab = ({ darkMode, savedQuoteCards }) => {
 
+    console.log(savedQuoteCards[0]);
+
     return ( 
-            <div className={darkMode ? "saved-quotes-container-dark" : "saved-quotes-container"}>
-                {savedQuoteCards}
-            </div>
+            <>
+                <div >
+                    {savedQuoteCards}
+                </div>
+            </>
      );
 }
  

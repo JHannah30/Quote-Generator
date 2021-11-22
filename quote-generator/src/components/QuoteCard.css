@@ -16,6 +16,7 @@
 
 .quote-avatar {
   transform: scale(0.7);
+  margin-left: 20px;
 }
 
 .quote-card-body {
@@ -40,10 +41,12 @@
 
 .quote-card-text {
   padding: 6px;
+  margin-left: 20px;
 }
 
 .quote-card-author {
   padding: 6px;
+  margin-left: 20px;
 }
 
 /* Dark mode styling  */

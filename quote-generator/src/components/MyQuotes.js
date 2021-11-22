@@ -11,7 +11,7 @@ const MyQuotes = ({
     addQuote,
 }) => {
 
-    const [activeTab, setActiveTab] = useState("custom")
+    const [activeTab, setActiveTab] = useState("custom");
 
     const savedQuoteCards = quotes.map((quote) => {
         if(quote.favourited){
