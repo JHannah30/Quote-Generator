@@ -11,9 +11,26 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [selectedIcon, setSelectedIcon] = useState(null);
   const [saveAlert, setSaveAlert] = useState(null)
-  const [quotes, setQuotes] = useState([...QuoteData]);
+  const [quotes, setQuotes] = useState(() => {
+    const localData = localStorage.getItem('quotes');
+    return localData ? JSON.parse(localData) : [...QuoteData];
+  });
   const [currentQuote, setCurrentQuote] = useState(quotes[Math.floor(Math.random() * 30)]);
-  const [customQuotes, setCustomQuotes] = useState([]);
+
+  // Checks if any custom quotes were stored in local storage. If so, updates state. If not, passes an empty array
+  const [customQuotes, setCustomQuotes] = useState(() => {
+    const localData = localStorage.getItem('customQuotes');
+    return localData ? JSON.parse(localData) : [];
+  });
+
+    // // Saving state to local storage
+  useEffect(() => {
+    localStorage.setItem('customQuotes', JSON.stringify(customQuotes))
+  }, [customQuotes]);
+
+  useEffect(() => {
+    localStorage.setItem('quotes', JSON.stringify(quotes))
+  }, [quotes]);
 
   //Toggles darkmode as active/inactive
   const handleDarkMode = () => {
@@ -92,7 +109,27 @@ function App() {
       return [...prevQuotes, newEntry]
     })
   }
-  
+
+  // useEffect(() => {
+  //   console.log("useEffect ran on update")
+  //   console.log(customQuotes)
+  //   localStorage.setItem('customQuotes', JSON.stringify(customQuotes));
+  //   localStorage.setItem('savedQuotes', JSON.stringify(quotes))
+  // }, [quotes, customQuotes]);
+
+  // useEffect(() => {
+  //   console.log("useEffect ran on initial render")
+  //   console.log(customQuotes)
+  //   const customQuoteData = localStorage.getItem('customQuotes');
+  //   if(customQuoteData) {
+  //     setCustomQuotes(JSON.parse(customQuoteData));
+  //   }
+  //   const savedQuoteData = localStorage.getItem('customQuotes');
+  //   if(savedQuoteData) {
+  //     setCustomQuotes(JSON.parse(savedQuoteData));
+  //   }
+  // }, []);
+   
   return (
     <Router>
       <div className={darkMode ? "App dark-bg" : "App"}>
