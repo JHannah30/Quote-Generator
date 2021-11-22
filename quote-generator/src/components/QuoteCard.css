@@ -1,6 +1,6 @@
 .quote-card {
   width: 66vw;
-  height: 140px;
+  height: 120px;
   margin: 20px 0;
   display: flex;
   align-items: center;
@@ -24,9 +24,8 @@
 }
 
 .remove-btn {
-  width: 48px;
-  height: 48px;
-  font-size: 1.5rem;
+  width: 32px;
+  height: 32px;
   font-weight: bold;
   color: #b4b4b4;
   background-color: transparent;
@@ -47,6 +46,7 @@
 .quote-card-author {
   padding: 6px;
   margin-left: 20px;
+  font-size: 1rem;
 }
 
 /* Dark mode styling  */
