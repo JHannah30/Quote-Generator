@@ -7,3 +7,11 @@
 .dark-bg {
   background-color: #212121;
 }
+
+input:focus-visible {
+  outline-color: rgb(236, 208, 51);
+}
+
+textarea:focus-visible {
+  outline-color: rgb(236, 208, 51);
+}

@@ -66,6 +66,8 @@
   display: none;
 }
 
+
+
 /* Dark mode styling */
 .my-quotes-dark {
   width: 100%;
@@ -94,11 +96,15 @@
   background-color: #2f2f2f;
 }
 
+
+
 @media only screen and (max-width: 825px) {
   .tab-btn {
     width: 40%;
   }
 }
+
+
 
 @media only screen and (max-width: 600px) {
   .add-quote-btn {

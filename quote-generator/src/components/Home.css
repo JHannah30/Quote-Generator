@@ -84,6 +84,8 @@
   background-color: rgb(236, 208, 51);
 }
 
+
+
 /* Dark mode styling */
 .home-dark {
   width: 100%;
@@ -103,6 +105,8 @@
 .home-dark p {
   color: #ffffff;
 }
+
+
 
 @media only screen and (max-width: 600px) {
 
@@ -137,6 +141,4 @@
   .save-alert {
     margin-left: 200px;
   }
-
-
 }

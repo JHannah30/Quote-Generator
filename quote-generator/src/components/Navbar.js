@@ -14,7 +14,9 @@ const Navbar = ({ handleDarkMode, darkMode }) => {
     return ( 
         <div className="navbar-container">
             <nav className={ darkMode ? "navbar-dark" : "navbar" }>
-                <img src={ darkMode ? NavLogoDark : NavLogoLight } alt="" className="nav-logo" />
+                <a className="nav-logo-link" href="/">
+                    <img src={ darkMode ? NavLogoDark : NavLogoLight } alt="" className="nav-logo" />
+                </a>
                 <div className="nav-links">
                     <Link 
                         to="/" 
