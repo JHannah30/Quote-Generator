@@ -21,7 +21,7 @@
   max-width: 700px;
   height: 45px;
   margin-bottom: 15px;
-  border: solid 1px #2f2f2f;
+  border: solid 1px #d3d3d3;
   border-radius: 10px;
 }
 
@@ -31,7 +31,7 @@
   height: 140px;
   margin-bottom: 30px;
   resize: none;
-  border: solid 1px #2f2f2f;
+  border: solid 1px #d3d3d3;
   border-radius: 10px;
 }
 
