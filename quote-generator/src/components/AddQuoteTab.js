@@ -34,7 +34,7 @@ const AddQuoteTab = ({
     return ( 
         <div className={darkMode ? "add-quote-container-dark" : "add-quote-container"}>
             <form onSubmit={handleSubmit} className="add-quote-form">
-                <label className="form-label">What's you name?</label>
+                <label className="form-label">What's your name?</label>
                 <input 
                     className="form-input-text"
                     type="text" 

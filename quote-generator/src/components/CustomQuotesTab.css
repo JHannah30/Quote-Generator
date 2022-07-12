@@ -9,14 +9,19 @@
 .custom-quotes-message {
   width: 100%;
   max-width: 650px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  text-align: center;
 }
 
 .create-quote-link {
-  margin-top: 20px;
-  font-size: 1.2rem;
+  margin-top: 40px;
+  font-size: 1.1rem;
   text-align: center;
   cursor: pointer;
+  border-bottom: solid 3px transparent;
+}
+
+.create-quote-link:hover {
   border-bottom: solid 3px rgb(236, 208, 51);
 }
 

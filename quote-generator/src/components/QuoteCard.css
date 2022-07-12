@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   border: solid 1px #d3d3d3;
+  border-radius: 10px;
   background-color: #ffffff;
 }
 
@@ -60,12 +61,14 @@
 
 /* Dark mode styling  */
 .quote-card-dark {
-  width: 66vw;
-  height: 140px;
+  width: 85vw;
+  max-width: 750px;
+  min-height: 120px;
   margin: 20px 0;
   display: flex;
   align-items: center;
   border: solid 1px #161616;
+  border-radius: 10px;
   background-color: #212121;
 }
 .quote-card-dark h4 {

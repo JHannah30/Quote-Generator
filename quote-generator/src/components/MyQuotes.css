@@ -98,7 +98,9 @@
   .tab-btn {
     width: 40%;
   }
+}
 
+@media only screen and (max-width: 600px) {
   .add-quote-btn {
     width: 10%;
     min-width: 50px;
@@ -113,7 +115,4 @@
     font-size: 2rem;
     font-weight: normal;
   }
-}
-
-@media only screen and (max-width: 600px) {
 }
