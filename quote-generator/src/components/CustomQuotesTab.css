@@ -2,18 +2,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .custom-quotes-message {
   width: 100%;
-  margin-top: 150px;
+  max-width: 650px;
   font-size: 1.5rem;
 }
 
 .create-quote-link {
-  width: 180px;
   margin-top: 20px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
   cursor: pointer;
   border-bottom: solid 3px rgb(236, 208, 51);
@@ -24,4 +25,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding: 20px;
 }

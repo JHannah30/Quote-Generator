@@ -65,7 +65,10 @@ const MyQuotes = ({
                 <button className={ activeTab === "custom" ? "tab-btn right-tab active-tab" : "tab-btn right-tab" } onClick={showCustomQuotesTab}>Custom Quotes</button>
                 
                 {/* Add new quote button */}
-                <button className="add-quote-btn" onClick={showNewQuoteTab}>Add New Quote</button>
+                <button className="tab-btn add-quote-btn" onClick={showNewQuoteTab}>
+                    <span className="add-quote-desktop-txt">Add Quote</span>
+                    <span className="add-quote-responsive-txt">+</span>
+                </button>
 
             </nav>
             <div className="quote-card-container">
