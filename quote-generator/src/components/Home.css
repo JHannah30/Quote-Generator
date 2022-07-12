@@ -46,6 +46,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgb(236, 208, 51);
   border: solid 2px rgb(236, 208, 51);
   border-radius: 15px;
 }
@@ -110,9 +111,10 @@
   }
 
   .quote-text {
+    margin: 80px 40px 40px 40px;
     font-size: 1.6rem;
-    margin: 40px;
   }
+  
 
   .author-body {
     flex-direction: column;
@@ -130,6 +132,10 @@
     margin-left: 0;
     margin-top: 10px;
     font-size: 1.1rem;
+  }
+
+  .save-alert {
+    margin-left: 200px;
   }
 
 
