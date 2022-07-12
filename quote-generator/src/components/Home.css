@@ -12,7 +12,7 @@
 }
 
 .quote-text {
-  margin: 40px 40px 50px 40px;
+  margin: 40px;
   font-size: 2.2rem;
 }
 
@@ -68,11 +68,11 @@
 
 .new-quote-btn {
   width: 100%;
-  max-width: 260px;
-  height: 65px;
+  max-width: 300px;
+  height: 60px;
   margin: 20px;
   background-color: #ffffff;
-  border: solid 3px #212121;
+  border: solid 2px #212121;
   border-radius: 15px;
   font-size: 1.1rem;
   font-weight: bold;
@@ -81,12 +81,11 @@
 
 .new-quote-btn:hover {
   background-color: rgb(236, 208, 51);
-  transform: scale(1.1);
 }
 
 /* Dark mode styling */
 .home-dark {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,14 +108,28 @@
     display: none;
   }
 
+  .quote-body {
+    margin: 0 0 20px 0;
+  }
+
+  .quote-text {
+    font-size: 1.6rem;
+    margin: 40px;
+  }
+
   .author-link {
     flex-direction: column;
   }
 
+  .author-image {
+    height: 75px;
+  }
+
   .author-name {
     margin-left: 0;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 1.1rem;
   }
+
 
 }
