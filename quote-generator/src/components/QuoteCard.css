@@ -1,6 +1,7 @@
 .quote-card {
+  width: 85vw;
+  max-width: 750px;
   min-height: 120px;
-  height: auto;
   margin: 20px;
   display: flex;
   align-items: center;
