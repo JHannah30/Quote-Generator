@@ -23,7 +23,7 @@ function App() {
     return localData ? JSON.parse(localData) : [];
   });
 
-  // // Saving state to local storage
+  // Saving state to local storage
   useEffect(() => {
     localStorage.setItem('customQuotes', JSON.stringify(customQuotes))
   }, [customQuotes]);

@@ -6,9 +6,9 @@
 }
 
 .quote-body {
-  width: 70vw;
-  height: 400px;
-  margin: 60px 0 30px 0;
+  width: 100%;
+  max-width: 800px;
+  margin: 60px 20px 30px 20px;
 }
 
 .quote-text {
@@ -61,7 +61,7 @@
 
 .new-quote-btn {
   width: 260px;
-  height: 70px;
+  height: 65px;
   background-color: #ffffff;
   border: solid 3px #212121;
   border-radius: 15px;
@@ -93,4 +93,16 @@
 
 .home-dark p {
   color: #ffffff;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
 }

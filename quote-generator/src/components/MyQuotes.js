@@ -16,7 +16,7 @@ const MyQuotes = ({
 
     const [activeTab, setActiveTab] = useState("saved");
 
-    // Takes in the customQuotes state and renders a component for each array value
+    // Takes in the customQuotes state and renders a component for each array item
     const customQuoteCards = customQuotes.map((quote) => {
         return <QuoteCard 
             darkMode={darkMode}
@@ -28,7 +28,7 @@ const MyQuotes = ({
             />
     })
  
-    // Takes in the quotes state and renders a component for each array value
+    // Takes in the quotes state and renders a component for each array item
     const savedQuoteCards = quotes.map((quote) => {
         if(quote.favourited){
             return <QuoteCard 
@@ -63,7 +63,6 @@ const MyQuotes = ({
 
                 {/* Custom quotes button */}
                 <button className={ activeTab === "custom" ? "tab-btn right-tab active-tab" : "tab-btn right-tab" } onClick={showCustomQuotesTab}>Custom Quotes</button>
-                
                 
                 {/* Add new quote button */}
                 <button className="add-quote-btn" onClick={showNewQuoteTab}>Add New Quote</button>

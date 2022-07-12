@@ -7,13 +7,13 @@
 .custom-quotes-message {
   width: 100%;
   margin-top: 150px;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 .create-quote-link {
-  width: 190px;
+  width: 180px;
   margin-top: 20px;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   text-align: center;
   cursor: pointer;
   border-bottom: solid 3px rgb(236, 208, 51);

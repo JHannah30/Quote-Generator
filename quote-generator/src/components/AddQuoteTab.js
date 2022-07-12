@@ -43,12 +43,12 @@ const AddQuoteTab = ({
                     onChange={handleChange}
                 />
                 <label className="form-label">Give us a few words of wisdom</label>
-                    <textarea 
-                        className="form-input-textarea"
-                        name="quote"
-                        value={newQuoteData.quote} 
-                        onChange={handleChange} 
-                    />
+                <textarea 
+                    className="form-input-textarea"
+                    name="quote"
+                    value={newQuoteData.quote} 
+                    onChange={handleChange} 
+                />
                 <input 
                     className="form-submit-btn"
                     type="submit"
