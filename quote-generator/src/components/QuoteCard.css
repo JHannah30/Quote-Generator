@@ -1,6 +1,7 @@
 .quote-card {
   /* width: 95%; */
-  height: 120px;
+  min-height: 120px;
+  height: auto;
   margin: 20px;
   display: flex;
   align-items: center;
@@ -8,19 +9,27 @@
   background-color: #ffffff;
 }
 
-.card-remove-section {
-  width: 100px;
+.card-avatar-section {
+  width: 23%;
+  min-width: 100px;
   display: flex;
   justify-content: center;
 }
 
 .quote-avatar {
-  transform: scale(0.8);
-  margin-left: 20px;
+  height: 80px;
 }
 
-.quote-card-body {
+.card-body-section {
   width: 100%;
+  padding: 6px;
+}
+
+.card-remove-section {
+  width: 10%;
+  min-width: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .remove-btn {
@@ -40,12 +49,12 @@
 
 .quote-card-text {
   padding: 6px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
 .quote-card-author {
   padding: 6px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   font-size: 1rem;
 }
 
@@ -69,4 +78,12 @@
 
 .quote-card-dark .remove-btn:hover {
   color: #212121;
+}
+
+
+@media only screen and (max-width: 825px) {
+  .quote-avatar {
+    height: 70px;
+    margin-left: 0;
+  }
 }
