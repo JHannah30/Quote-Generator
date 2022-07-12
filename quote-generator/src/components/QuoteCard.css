@@ -1,5 +1,4 @@
 .quote-card {
-  /* width: 95%; */
   min-height: 120px;
   height: auto;
   margin: 20px;
@@ -40,6 +39,8 @@
   background-color: transparent;
   border: none;
   border-radius: 50px;
+  text-align: center;
+  font-size: 1rem;;
 }
 
 .remove-btn:hover {
@@ -49,12 +50,10 @@
 
 .quote-card-text {
   padding: 6px;
-  /* margin-left: 20px; */
 }
 
 .quote-card-author {
   padding: 6px;
-  /* margin-left: 20px; */
   font-size: 1rem;
 }
 
