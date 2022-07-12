@@ -4,7 +4,7 @@ import UnselectedHeart from '../images/heart-unselected.png';
 
 const ToggleHeartIcon = ({ 
     quoteFavourited,
-    handleSelectedIcon 
+    handleSelectedIcon
 }) => {
 
     return ( 

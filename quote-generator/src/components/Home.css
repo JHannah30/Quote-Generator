@@ -46,7 +46,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid 3px rgb(236, 208, 51);
+  border: solid 2px rgb(236, 208, 51);
   border-radius: 15px;
 }
 
@@ -104,9 +104,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .heart-container {
-    display: none;
-  }
 
   .quote-body {
     margin: 0 0 20px 0;
@@ -115,6 +112,10 @@
   .quote-text {
     font-size: 1.6rem;
     margin: 40px;
+  }
+
+  .author-body {
+    flex-direction: column;
   }
 
   .author-link {
