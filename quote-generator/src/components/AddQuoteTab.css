@@ -32,10 +32,27 @@
   width: 100%;
   max-width: 600px;
   height: 140px;
-  margin-bottom: 30px;
   resize: none;
   border: solid 1px #d3d3d3;
   border-radius: 10px;
+}
+
+.char-limit-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.char-limit {
+  margin-bottom: 30px;
+  font-size: 0.8rem;
+}
+
+.char-limit-max {
+  margin-bottom: 30px;
+  font-size: 0.8rem;
+  /* font-weight: bold; */
+  color: rgb(145, 47, 47);
 }
 
 .form-submit-btn {

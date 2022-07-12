@@ -10,11 +10,19 @@ const AddQuoteTab = ({
 }) => {
 
     const [newQuoteData, setNewQuoteData] = useState([]);
+    const [quoteCharCount, setQuoteCharCount] = useState(0);
     
     const handleChange = (e) => {
         const name = e.target.name;
         const value = e.target.value;
-        setNewQuoteData(values => ({...values, [name]: value}))    
+        setNewQuoteData(values => ({...values, [name]: value}));
+    }
+
+    const handleQuoteChange = (e) => {
+        const name = e.target.name;
+        const value = e.target.value;
+        setQuoteCharCount(e.target.value.length);
+        setNewQuoteData(values => ({...values, [name]: value}));
     }
 
     // On form submission, data is saved as a new quote and passed up into App.js
@@ -46,13 +54,19 @@ const AddQuoteTab = ({
                 <textarea 
                     className="form-input-textarea"
                     name="quote"
+                    maxLength="120"
                     value={newQuoteData.quote} 
-                    onChange={handleChange} 
+                    onChange={handleQuoteChange} 
                 />
+                <div className="char-limit-container">
+                    <p 
+                        className={quoteCharCount > 109 ? "char-limit-max" : "char-limit"}>{quoteCharCount}/120
+                    </p>
+                </div>
                 <input 
                     className="form-submit-btn"
                     type="submit"
-                    />
+                />
             </form>
         </div>
      );

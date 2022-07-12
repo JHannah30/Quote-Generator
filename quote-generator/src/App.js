@@ -17,11 +17,13 @@ function App() {
   });
   const [currentQuote, setCurrentQuote] = useState(quotes[Math.floor(Math.random() * 30)]);
 
+
   // Checks if any custom quotes were stored in local storage. If so, updates state. If not, passes an empty array
   const [customQuotes, setCustomQuotes] = useState(() => {
     const localData = localStorage.getItem('customQuotes');
     return localData ? JSON.parse(localData) : [];
   });
+
 
   // Saving state to local storage
   useEffect(() => {
@@ -32,16 +34,19 @@ function App() {
     localStorage.setItem('quotes', JSON.stringify(quotes))
   }, [quotes]);
 
+
   //Toggles darkmode as active/inactive
   const handleDarkMode = () => {
     setDarkMode(!darkMode);
   } 
+
 
   // Shows a random quote on screen when the New Quote button is clicked
   const getNewQuote = () => {
     setSelectedIcon(null);
     setCurrentQuote(quotes[Math.floor(Math.random() * 30)]);
   }
+
 
   // Changes appearance of saved/favourited icon when clicked
   const handleSelectedIcon = () => {
@@ -58,6 +63,7 @@ function App() {
       }, 1000)
     }
 
+
     // Updates the value based on if the quote has been favourited or not
     let quoteID = currentQuote.id;
     for(let i = 0; i < quotes.length; i++){
@@ -70,6 +76,7 @@ function App() {
         }
     }
   }
+
 
   // Shows alert on screen to let user know when a quote has been saved/unsaved.
   useEffect(() => {
@@ -86,12 +93,14 @@ function App() {
     }
   }, [selectedIcon])    
 
+
   // Used to remove listed QuoteCards from rendered list when delete button is clicked
   const removeEntry = (id) => {
     setCustomQuotes(customQuotes.filter((quote) => {
       return id !== quote.id
     }))
   }
+
 
   // Change item from favourited to not favourited
   const removeFavourited = (n) => {
@@ -105,6 +114,7 @@ function App() {
     }
   }
 
+
   // Takes new quote form inputs and adds them 
   const addNewQuote = (newEntry) => {
     setCustomQuotes((prevQuotes) => {
@@ -112,6 +122,7 @@ function App() {
     })
   }
    
+  
   return (
     <Router>
       <div className={darkMode ? "App dark-bg" : "App"}>
