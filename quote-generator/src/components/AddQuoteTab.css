@@ -39,6 +39,7 @@
 
 .char-limit-container {
   width: 100%;
+  max-width: 600px;
   display: flex;
   justify-content: flex-end;
 }
@@ -52,7 +53,7 @@
   margin-bottom: 30px;
   font-size: 0.8rem;
   /* font-weight: bold; */
-  color: rgb(145, 47, 47);
+  color: rgb(187, 48, 48);
 }
 
 .form-submit-btn {
