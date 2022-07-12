@@ -60,7 +60,7 @@ const AddQuoteTab = ({
                 />
                 <div className="char-limit-container">
                     <p 
-                        className={quoteCharCount > 109 ? "char-limit-max" : "char-limit"}>{quoteCharCount}/120
+                        className={quoteCharCount > 109 && quoteCharCount < 120 ? "char-limit-close" : quoteCharCount === 120 ? "char-limit-max" : "char-limit"}>{quoteCharCount}/120
                     </p>
                 </div>
                 <input 

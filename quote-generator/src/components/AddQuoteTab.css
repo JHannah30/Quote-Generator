@@ -49,11 +49,16 @@
   font-size: 0.8rem;
 }
 
+.char-limit-close {
+  margin-bottom: 30px;
+  font-size: 0.8rem;
+  color: rgb(236, 208, 51);
+}
+
 .char-limit-max {
   margin-bottom: 30px;
   font-size: 0.8rem;
-  /* font-weight: bold; */
-  color: rgb(187, 48, 48);
+  color: rgb(206 37 37);
 }
 
 .form-submit-btn {
@@ -74,7 +79,9 @@
 
 /* Dark mode styling */
 .add-quote-container-dark {
+  width: 100%;
   display: flex;
+  justify-content: center;
 }
 
 .add-quote-container-dark .form-label {
@@ -87,6 +94,10 @@
 
 .add-quote-container-dark .form-input-textarea {
   background-color: #f2f2f2;
+}
+
+.add-quote-container-dark .char-limit {
+  color: #ffffff;
 }
 
 
