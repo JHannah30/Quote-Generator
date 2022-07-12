@@ -11,14 +11,14 @@ const QuoteCard = ({
 
     return ( 
         <div key={id} className={ darkMode ? "quote-card-dark" : "quote-card" }>
-            <div className="quote-card-section">
+            <div className="card-avatar-section">
                 <img className="quote-avatar" src={image} alt="User avatar" />
             </div>
-            <div className="quote-card-body">
+            <div className="card-body-section">
                 <p className="quote-card-text">{quote}</p>
                 <h4 className="quote-card-author">{author}</h4>
             </div>
-            <div className="quote-card-section">
+            <div className="card-remove-section">
                 <button onClick={() => handleClick(id)} className="remove-btn">x</button>
             </div>
         </div> 
