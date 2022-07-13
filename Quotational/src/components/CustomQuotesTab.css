@@ -1,0 +1,35 @@
+.custom-quotes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.custom-quotes-message {
+  width: 100%;
+  max-width: 650px;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.create-quote-link {
+  margin-top: 40px;
+  font-size: 1.1rem;
+  text-align: center;
+  cursor: pointer;
+  border-bottom: solid 3px transparent;
+}
+
+.create-quote-link:hover {
+  border-bottom: solid 3px rgb(236, 208, 51);
+}
+
+/* Dark mode styling */
+.custom-quotes-container-dark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}

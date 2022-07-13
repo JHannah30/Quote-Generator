@@ -1,0 +1,124 @@
+.my-quotes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab-bar {
+  width: 100%;
+  max-width: 825px;
+  height: 50px;
+  margin-top: 20px;
+  display: flex;
+  border-bottom: solid 1px rgb(236, 208, 51);
+}
+
+.tab-btn {
+  max-width: 150px;
+  margin-bottom: -2px;
+  padding: 4px 18px;
+  background-color: transparent;
+  border: solid 1.5px rgb(236, 208, 51);
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: -1px;
+}
+
+.left-tab {
+  max-width: 200px;
+  border-radius: 10px 0 0 0;
+}
+
+.right-tab {
+  max-width: 200px;
+  border-radius: 0 10px 0 0;
+}
+
+.active-tab {
+  background-color: rgb(236, 208, 51);
+}
+
+.add-quote-btn {
+  margin-left: auto;
+  border-radius: 10px 10px 0 0;
+  background-color: rgb(236, 208, 51);
+}
+
+.quote-card-container {
+  width: 100%;
+  max-width: 825px;
+  height: 65vh;
+  max-height: 500px;
+  overflow-y: scroll;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 1px rgb(236, 208, 51);
+}
+
+/* The following two classes will be toggling based on the device width, determining what text should appear inside the tab button */
+.add-quote-desktop-txt {
+  font-size: 0.9rem;
+}
+
+.add-quote-responsive-txt {
+  display: none;
+}
+
+
+
+/* Dark mode styling */
+.my-quotes-dark {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-quotes-dark button {
+  color: #ffffff;
+}
+
+.my-quotes-dark h2 {
+  color: #ffffff;
+}
+
+.my-quotes-dark .add-quote-btn {
+  color: #212121;
+}
+
+.my-quotes-dark .active-tab {
+  color: #212121;
+}
+
+.my-quotes-dark .quote-card-container {
+  background-color: #2f2f2f;
+}
+
+
+
+@media only screen and (max-width: 825px) {
+  .tab-btn {
+    width: 40%;
+  }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .add-quote-btn {
+    width: 10%;
+    min-width: 50px;
+  }
+
+  .add-quote-desktop-txt {
+    display: none;
+  }
+  
+  .add-quote-responsive-txt {
+    display: block;
+    font-size: 2rem;
+    font-weight: normal;
+  }
+}

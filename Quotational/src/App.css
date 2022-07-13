@@ -1,0 +1,31 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.dark-bg {
+  background-color: #212121;
+}
+
+
+
+input:focus-visible {
+  outline-color: rgb(236, 208, 51);
+}
+
+textarea:focus-visible {
+  outline-color: rgb(236, 208, 51);
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  input {
+    font-size: 1rem;
+  }
+
+  textarea {
+    font-size: 1rem;
+  }
+}

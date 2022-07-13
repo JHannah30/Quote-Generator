@@ -1,0 +1,89 @@
+.navbar-container {
+  width: 100%;
+}
+
+.navbar {
+  height: 40px;
+  padding: 20px 60px;
+  display: flex;
+  align-items: center;
+  /* border-bottom: 1px solid #f2f2f2; */
+}
+
+.navbar .nav-links {
+  margin-left: auto;
+}
+
+.navbar a {
+  height: 100%;
+  margin-left: 16px;
+  padding: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-logo-link {
+  margin-left: 0 !important;
+}
+
+.nav-logo {
+  height: 40px;
+  margin-top: 5px;
+}
+
+.dark-mode-icon {
+  height: 25px;
+  margin-left: 48px;
+  cursor: pointer;
+}
+
+/* Change this property to something nicer looking, that let's the user know when they're on that page */
+.navlink-active {
+  border-bottom: 3px solid rgb(236, 208, 51);
+}
+
+/* Dark Mode Styling */
+
+.navbar-dark {
+  height: 40px;
+  padding: 20px 60px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #3f3f3f;
+}
+
+.navbar-dark .nav-links {
+  margin-left: auto;
+}
+
+.navbar-dark a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    padding: 20px 40px;    
+  }
+
+  .navbar-dark {
+    padding: 20px 40px;
+  }
+
+  .navbar a {
+    font-size: 0.9rem;
+  }
+
+  .navbar-dark a {
+    font-size: 0.9rem;
+  }
+  
+  .dark-mode-icon {
+    margin-left: 20px;
+  }
+  
+}

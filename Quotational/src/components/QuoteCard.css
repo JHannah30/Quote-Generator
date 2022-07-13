@@ -1,0 +1,95 @@
+.quote-card {
+  width: 85vw;
+  max-width: 750px;
+  min-height: 120px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  border: solid 1px #d3d3d3;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.card-avatar-section {
+  width: 25%;
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.quote-avatar {
+  height: 80px;
+}
+
+.card-body-section {
+  width: 100%;
+  padding: 6px;
+}
+
+.card-remove-section {
+  width: 10%;
+  min-width: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.remove-btn {
+  width: 32px;
+  height: 32px;
+  font-weight: bold;
+  color: #b4b4b4;
+  background-color: transparent;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 1rem;;
+}
+
+.remove-btn:hover {
+  color: #ffffff;
+  background-color: #d15151;
+}
+
+.quote-card-text {
+  padding: 6px;
+}
+
+.quote-card-author {
+  padding: 6px;
+  font-size: 1rem;
+}
+
+
+
+/* Dark mode styling  */
+.quote-card-dark {
+  width: 85vw;
+  max-width: 750px;
+  min-height: 120px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  border: solid 1px #161616;
+  border-radius: 10px;
+  background-color: #212121;
+}
+.quote-card-dark h4 {
+  color: #ffffff;
+}
+
+.quote-card-dark p {
+  color: #ffffff;
+}
+
+.quote-card-dark .remove-btn:hover {
+  color: #212121;
+}
+
+
+
+@media only screen and (max-width: 825px) {
+  .quote-avatar {
+    height: 70px;
+    margin-left: 0;
+  }
+}
