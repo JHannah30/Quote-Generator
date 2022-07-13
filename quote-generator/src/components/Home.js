@@ -19,11 +19,14 @@ const Home = ({
                         <img className="author-image" src={currentQuote.image} alt="Headshot of the quote's author" />
                         <h4 className="author-name">{currentQuote.author}</h4>
                     </a>
-                    <ToggleHeartIcon 
-                        quoteFavourited={currentQuote.favourited}
-                        selectedIcon={selectedIcon}
-                        handleSelectedIcon={handleSelectedIcon}
-                    />
+                    <div className="icon-wrapper">
+                        <div className="speaker-icon"></div>
+                        <ToggleHeartIcon 
+                            quoteFavourited={currentQuote.favourited}
+                            selectedIcon={selectedIcon}
+                            handleSelectedIcon={handleSelectedIcon}
+                        />
+                    </div>
                     <div className={ saveAlert === null ? "hide" : "save-alert" }>
                         <p className="save-notification">{saveAlert}</p>
                     </div>

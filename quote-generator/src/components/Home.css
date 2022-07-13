@@ -56,6 +56,23 @@
   font-size: 0.9rem;
 }
 
+.icon-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80px;
+  margin: 12px 24px;
+  padding: 6px;
+}
+
+.speaker-icon {
+  width: 30px;
+  height: 25px;
+  background-image: url(../images/speaker-icon.png);
+  background-size: contain; background-repeat: no-repeat;
+  cursor: pointer;
+}
+
 .hide {
   display: none;
 }
@@ -139,6 +156,7 @@
   }
 
   .save-alert {
-    margin-left: 200px;
+    margin-left: 240px;
+    margin-top: 110px;
   }
 }
