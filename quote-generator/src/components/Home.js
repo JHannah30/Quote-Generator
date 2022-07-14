@@ -1,5 +1,6 @@
 import './Home.css';
 import ToggleHeartIcon from './ToggleHeartIcon';
+import ToggleSpeechIcon from './ToggleSpeechIcon';
 
 const Home = ({ 
     currentQuote,
@@ -9,10 +10,6 @@ const Home = ({
     newQuote,
     handleSelectedIcon,
 }) => {
-
-    const showAlertOnClick = () => {
-        alert("Whoops. Looks like we haven't hooked the sound up yet");
-    }
 
     return ( 
         <div className={ darkMode ? "home-dark" : "home" }>
@@ -24,7 +21,7 @@ const Home = ({
                         <h4 className="author-name">{currentQuote.author}</h4>
                     </a>
                     <div className="icon-wrapper">
-                        <div className="speaker-icon" onClick={showAlertOnClick}></div>
+                        <ToggleSpeechIcon />
                         <ToggleHeartIcon 
                             quoteFavourited={currentQuote.favourited}
                             selectedIcon={selectedIcon}
@@ -38,7 +35,7 @@ const Home = ({
             </section>
             <section className="quote-actions">
                 <button className="new-quote-btn" onClick={newQuote}>New Quote</button>
-            </section>
+            </section> 
         </div>
      );
 }
