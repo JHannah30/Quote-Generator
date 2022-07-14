@@ -10,6 +10,10 @@ const Home = ({
     handleSelectedIcon,
 }) => {
 
+    const showAlertOnClick = () => {
+        alert("Whoops. Looks like we haven't hooked the sound up yet");
+    }
+
     return ( 
         <div className={ darkMode ? "home-dark" : "home" }>
             <section className="quote-body centered">
@@ -20,7 +24,7 @@ const Home = ({
                         <h4 className="author-name">{currentQuote.author}</h4>
                     </a>
                     <div className="icon-wrapper">
-                        <div className="speaker-icon"></div>
+                        <div className="speaker-icon" onClick={showAlertOnClick}></div>
                         <ToggleHeartIcon 
                             quoteFavourited={currentQuote.favourited}
                             selectedIcon={selectedIcon}
