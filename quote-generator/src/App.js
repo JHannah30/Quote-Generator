@@ -122,6 +122,8 @@ function App() {
     })
   }
    
+  console.log(quotes)
+  console.log(currentQuote)
   
   return (
     <Router>

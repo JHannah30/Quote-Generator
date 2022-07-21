@@ -36,6 +36,7 @@ export const QuoteData = [
         image: NelsonMandela,
         wiki: "https://en.wikipedia.org/wiki/Nelson_Mandela",
         favourited: false,
+        narrator: 'male',
     },
     {
         id: 1,
@@ -44,6 +45,7 @@ export const QuoteData = [
         image: WaltDisney,
         wiki: "https://en.wikipedia.org/wiki/Walt_Disney",
         favourited: false,
+        narrator: 'male',
     },
     {
         id: 2,
@@ -52,6 +54,7 @@ export const QuoteData = [
         image: SteveJobs,
         wiki: "https://en.wikipedia.org/wiki/Steve_Jobs",
         favourited: false,
+        narrator: 'male',
     },
     {
         id: 3,
@@ -60,6 +63,7 @@ export const QuoteData = [
         image: EleanorRoosevelt,
         wiki: "https://en.wikipedia.org/wiki/Eleanor_Roosevelt",
         favourited: false,
+        narrator: 'female',
     },
     {
         id: 4,
@@ -68,6 +72,7 @@ export const QuoteData = [
         image: OprahWinfrey,
         wiki: "https://en.wikipedia.org/wiki/Oprah_Winfrey",
         favourited: false,
+        narrator: 'female',
     },
     {
         id: 5,
@@ -76,6 +81,7 @@ export const QuoteData = [
         image: JamesCameron,
         wiki: "https://en.wikipedia.org/wiki/James_Cameron",
         favourited: false,
+        narrator: 'male',
     },
     {
         id: 6,
@@ -84,6 +90,7 @@ export const QuoteData = [
         image: JohnLennon,
         wiki: "https://en.wikipedia.org/wiki/John_Lennon",
         favourited: false,
+        narrator: 'male',
     },
     {
         id: 7,
@@ -92,6 +99,7 @@ export const QuoteData = [
         image: MotherTheresa,
         wiki: "https://en.wikipedia.org/wiki/Mother_Teresa",
         favourited: false,
+        narrator: 'female',
     },
     {
         id: 8,
@@ -100,6 +108,7 @@ export const QuoteData = [
         image: FranklinDRoosevelt,
         wiki: "https://en.wikipedia.org/wiki/Franklin_D._Roosevelt",
         favourited: false,
+        narrator: 'male',
     },
     {
         id: 9,
@@ -108,6 +117,7 @@ export const QuoteData = [
         image: MargaretMead,
         wiki: "https://en.wikipedia.org/wiki/Margaret_Mead",
         favourited: false,
+        narrator: 'female',
     },
     {
         id: 10,
@@ -116,6 +126,7 @@ export const QuoteData = [
         image: RobertLouisStevenson,
         wiki: "https://en.wikipedia.org/wiki/Robert_Louis_Stevenson",
         favourited: false,
+        narrator: 'male',
     },
     {
         id: 11,
@@ -124,6 +135,7 @@ export const QuoteData = [
         image: EleanorRoosevelt,
         wiki: "https://en.wikipedia.org/wiki/Eleanor_Roosevelt",
         favourited: false,
+        narrator: 'female',
     },
     {
         id: 12,
@@ -132,6 +144,7 @@ export const QuoteData = [
         image: BenjaminFranklin,
         wiki: "https://en.wikipedia.org/wiki/Benjamin_Franklin",
         favourited: false,
+        narrator: 'male',
     },
     {
         id: 13,
@@ -140,6 +153,7 @@ export const QuoteData = [
         image: HelenKeller,
         wiki: "https://en.wikipedia.org/wiki/Helen_Keller",
         favourited: false,
+        narrator: 'female',
     },
     {
         id: 14,
@@ -148,6 +162,7 @@ export const QuoteData = [
         image: Aristotle,
         wiki: "https://en.wikipedia.org/wiki/Aristotle",
         favourited: false,
+        narrator: 'male',
     },
     {
         id: 15,
@@ -156,6 +171,7 @@ export const QuoteData = [
         image: AnneFrank,
         wiki: "https://en.wikipedia.org/wiki/Anne_Frank",
         favourited: false,
+        narrator: 'female',
     },
     {
         id: 16,
@@ -164,6 +180,7 @@ export const QuoteData = [
         image: RalphWaldoEmerson,
         wiki: "https://en.wikipedia.org/wiki/Ralph_Waldo_Emerson",
         favourited: false,
+        narrator: 'male',
     },
     {
         id: 17,
@@ -172,6 +189,7 @@ export const QuoteData = [
         image: MayaAngelou,
         wiki: "https://en.wikipedia.org/wiki/Maya_Angelou",
         favourited: false,
+        narrator: 'female',
     },
     {
         id: 18,
@@ -180,6 +198,7 @@ export const QuoteData = [
         image: NelsonMandela,
         wiki: "https://en.wikipedia.org/wiki/Nelson_Mandela",
         favourited: false,
+        narrator: 'male',
     },
     {
         id: 19,
@@ -188,6 +207,7 @@ export const QuoteData = [
         image: AbrahamLincoln,
         wiki: "https://en.wikipedia.org/wiki/Abraham_Lincoln",
         favourited: false,
+        narrator: 'male',
     },
     {
         id: 20,
@@ -196,6 +216,7 @@ export const QuoteData = [
         image: BabeRuth,
         wiki: "https://en.wikipedia.org/wiki/Babe_Ruth",
         favourited: false,
+        narrator: 'male',
     },
     {
         id: 21,
@@ -204,6 +225,7 @@ export const QuoteData = [
         image: HelenKeller,
         wiki: "https://en.wikipedia.org/wiki/Helen_Keller",
         favourited: false,
+        narrator: 'female',
     },
     {
         id: 22,
@@ -212,6 +234,7 @@ export const QuoteData = [
         image: ThomasEdison,
         wiki: "https://en.wikipedia.org/wiki/Thomas_Edison",
         favourited: false,
+        narrator: 'male',
     },
     {
         id: 23,
@@ -220,6 +243,7 @@ export const QuoteData = [
         image: DrSeuss,
         wiki: "https://en.wikipedia.org/wiki/Dr._Seuss",
         favourited: false,
+        narrator: 'male',
     },
     {
         id: 24,
@@ -228,6 +252,7 @@ export const QuoteData = [
         image: WinstonChurchill,
         wiki: "https://en.wikipedia.org/wiki/Winston_Churchill",
         favourited: false,
+        narrator: 'male',
     },
     {
         id: 25,
@@ -236,6 +261,7 @@ export const QuoteData = [
         image: HenryDavidThoreau,
         wiki: "https://en.wikipedia.org/wiki/Henry_David_Thoreau",
         favourited: false,
+        narrator: 'male',
     },
     {
         id: 26,
@@ -244,6 +270,7 @@ export const QuoteData = [
         image: JohnDRockefellarJr,
         wiki: "https://en.wikipedia.org/wiki/John_D._Rockefeller_Jr.",
         favourited: false,
+        narrator: 'male',
     },
     {
         id: 27,
@@ -252,6 +279,7 @@ export const QuoteData = [
         image: ThomasJefferson,
         wiki: "https://en.wikipedia.org/wiki/Thomas_Jefferson",
         favourited: false,
+        narrator: 'male',
     },
     {
         id: 28,
@@ -260,6 +288,7 @@ export const QuoteData = [
         image: AudreyHepburn,
         wiki: "https://en.wikipedia.org/wiki/Audrey_Hepburn",
         favourited: false,
+        narrator: 'female',
     },
     {
         id: 29,
@@ -268,5 +297,6 @@ export const QuoteData = [
         image: WayneGretzky,
         wiki: "https://en.wikipedia.org/wiki/Wayne_Gretzky",
         favourited: false,
+        narrator: 'male',
     },
 ]
