@@ -22,7 +22,7 @@ const Home = ({
                     </a>
                     <div className="icon-wrapper">
                         <ToggleSpeechIcon 
-                            currentQuoteText={currentQuote.quote}
+                            currentQuote={currentQuote}
                         />
                         <ToggleHeartIcon 
                             quoteFavourited={currentQuote.favourited}
