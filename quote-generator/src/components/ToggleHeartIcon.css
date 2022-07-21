@@ -2,10 +2,3 @@
   height: 25px;
   cursor: pointer;
 }
-
-@media only screen and (max-width: 600px) {
-  .heart-icon {
-    /* margin-left: 0;
-    margin-top: 20px; */
-  }
-}

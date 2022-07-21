@@ -21,7 +21,9 @@ const Home = ({
                         <h4 className="author-name">{currentQuote.author}</h4>
                     </a>
                     <div className="icon-wrapper">
-                        <ToggleSpeechIcon />
+                        <ToggleSpeechIcon 
+                            currentQuote={currentQuote}
+                        />
                         <ToggleHeartIcon 
                             quoteFavourited={currentQuote.favourited}
                             selectedIcon={selectedIcon}
