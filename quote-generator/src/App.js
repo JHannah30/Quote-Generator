@@ -91,7 +91,7 @@ function App() {
         setSaveAlert(null)
       }, 1000)
     }
-  }, [selectedIcon])    
+  }, [selectedIcon])  
 
 
   // Used to remove listed QuoteCards from rendered list when delete button is clicked

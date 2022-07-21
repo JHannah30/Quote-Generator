@@ -207,7 +207,7 @@ export const QuoteData = [
     },
     {
         id: 22,
-        quote: "Many of life's failures are people who did not realize how close they were to success when they gave up.",
+        quote: "Many of life's failures are people who did not realize how close they were to success when they gave up",
         author: "Thomas A. Edison",
         image: ThomasEdison,
         wiki: "https://en.wikipedia.org/wiki/Thomas_Edison",
