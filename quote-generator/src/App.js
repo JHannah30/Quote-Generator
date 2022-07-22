@@ -121,9 +121,7 @@ function App() {
       return [...prevQuotes, newEntry]
     })
   }
-   
-  console.log(quotes)
-  console.log(currentQuote)
+
   
   return (
     <Router>
