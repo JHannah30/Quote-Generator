@@ -1,5 +1,5 @@
 .navbar-container {
-  width: 100%;
+  width: 100vw;
 }
 
 .navbar {
@@ -39,7 +39,6 @@
   cursor: pointer;
 }
 
-/* Change this property to something nicer looking, that let's the user know when they're on that page */
 .navlink-active {
   border-bottom: 3px solid rgb(236, 208, 51);
 }

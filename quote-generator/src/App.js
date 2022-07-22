@@ -51,18 +51,18 @@ function App() {
   // Changes appearance of saved/favourited icon when clicked
   const handleSelectedIcon = () => {
     setSelectedIcon(!selectedIcon);
-    if(selectedIcon){
-      setSaveAlert("Saved");
-      setTimeout(() => {
-        setSaveAlert(null)
-      }, 1000)
-    } else if(selectedIcon === false){
-      setSaveAlert("Removed")
-      setTimeout(() => {
-        setSaveAlert(null)
-      }, 1000)
-    }
-
+    
+    // if(selectedIcon){
+    //   setSaveAlert("Saved");
+    //   setTimeout(() => {
+    //     setSaveAlert(null)
+    //   }, 1000)
+    // } else if(!selectedIcon){
+    //   setSaveAlert("Removed")
+    //   setTimeout(() => {
+    //     setSaveAlert(null)
+    //   }, 1000)
+    // }
 
     // Updates the value based on if the quote has been favourited or not
     let quoteID = currentQuote.id;
@@ -85,7 +85,7 @@ function App() {
       setTimeout(() => {
         setSaveAlert(null)
       }, 1000)
-    } else if(selectedIcon === false){
+    } else if(!selectedIcon){
       setSaveAlert("Removed")
       setTimeout(() => {
         setSaveAlert(null)

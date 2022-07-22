@@ -14,9 +14,6 @@
 }
 
 .create-quote-link {
-  margin-top: 40px;
-  font-size: 1.1rem;
-  text-align: center;
   cursor: pointer;
   border-bottom: solid 3px transparent;
 }
@@ -32,4 +29,8 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
+}
+
+.custom-quotes-container-dark .create-quote-link {
+  color: white;
 }
